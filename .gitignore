@@ -1,0 +1,32 @@
+# Images
+*.png
+*.jpg
+*.eps
+
+# Mac stuff
+*.key
+*.xlsx
+*.xls
+*.DS_Store
+
+# Latex files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.synctex.gz
+*.sty
+*.cls
+*.zip
+*.cfg
+*.bbl
+*.blg
+*.nav
+*.snm
+*.toc
+
+# Other stuff
+*/__junk__/*
+*.out
+

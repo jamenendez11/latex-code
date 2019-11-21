@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+% \graphicspath{{figures_path_1/}{~/figures_path_2/}} # set paths in which to look for figures
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{titlesec} % to change font settings of titles: http://www.ctex.org/documents/packages/layout/titlesec.pdf, and allow extra subsections using \paragraph{}
+\usepackage{enumitem} % to change the spacing of bullet points
+% Figure formatting
+\usepackage{float} % to place figures precisely within text, by using the H option: \begin{figure}[H]
+\usepackage{wrapfig} % for text wrapping of figures
+\usepackage[font=footnotesize]{caption}
+\usepackage[font=scriptsize]{subcaption} % cf. http://www.peteryu.ca/tutorials/publishing/latex_captions
+\captionsetup[figure]{labelformat=simple, labelsep=space, skip=0pt} % set labelformat = empty to eliminate figure caption labels
+\captionsetup[subfigure]{labelformat=parens, labelsep=space, skip=0pt}
+
+% TITLE FORMATTING
+\usepackage{titling}
+\pretitle{\vspace{-3cm}\begin{flushleft}\Large}
+\posttitle{\end{flushleft}\vspace{-0.5cm}}
+\preauthor{\begin{flushleft}\large}
+\postauthor{\end{flushleft}\vspace{-1.2cm}}
+\newcommand{\mytitle}[1]{\title{\textbf{#1}}}
+\newcommand{\myauthor}[1]{\author{#1 \hfill \today}\date{}}
+
+% SECTION FORMATTING
+\titleformat{\section}{\large\scshape}{\thesection}{1em}{\vspace{-0.5em}} % remove \thesection to remove numbering of sections
+% \setlist{nolistsep} % eliminates extra space in itemize and enumerate lists
+% \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{} % so that \paragraph{} creates a new section header
+% \titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex} % give \paragraph{} section header the right spacing
+% \setcounter{secnumdepth}{4} % give \paragraph{} section header a section number
+
+% TITLE
+\mytitle{My notes}
+\myauthor{Jorge Aurelio Men\'endez}
+
+\begin{document}
+\maketitle
+
+\section{This section is useless}
+
+Mammalian motor systems are remarkably flexible.
+
+\section{Section 2}
+
+Is also useless.
+
+% \bibliographystyle{apalike}
+% \bibliography{refs}
+
+\end{document}
