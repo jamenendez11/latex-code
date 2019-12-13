@@ -14,9 +14,14 @@
 \newcommand{\norm}[1]{\left\| #1 \right\|}              % matrix/vector norm
 \newcommand{\frob}[1]{\norm{#1}_\mathcal{F}}            % Frobenius norm
 \newcommand{\trace}[1]{\text{Tr}\left[ #1 \right]}      % trace
+\renewcommand{\vec}[1]{\text{vec}\left[ #1 \right]}     % vectorize (N.B. overwriting latex \vec)
 
 % Statistics
 \newcommand{\expec}[1]{\left\langle #1 \right\rangle}   % expectation
 \newcommand{\cov}[1]{\text{cov}\left[ #1 \right]}       % covariance
 \newcommand{\var}[1]{\text{Var}\left[ #1 \right]}       % variance
 \newcommand{\gauss}[2]{\mathcal{N}\p{#1, #2}}           % Gaussian distribution
+
+% Calculus
+\newcommand{\dydx}[2]{\frac{\text{d} #1}{\text{d} #2}}
+\newcommand{\pypx}[2]{\frac{\partial #1}{\partial #2}}
