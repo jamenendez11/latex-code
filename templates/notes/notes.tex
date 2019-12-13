@@ -1,5 +1,4 @@
 \documentclass[a4paper]{article}
-
 \usepackage[utf8x]{inputenc}
 \usepackage[a4paper,margin=1in]{geometry}
 
@@ -10,7 +9,20 @@
 
 % List formatting
 \usepackage{enumitem}
-% \setlist{nolistsep} % eliminates extra space in itemize and enumerate lists
+\setlist{nolistsep} % eliminates extra space in itemize and enumerate lists
+
+% Figures
+\usepackage{graphicx}
+% \graphicspath{{figures_path_1/}{~/figures_path_2/}} # set paths in which to look for figures
+\usepackage{float} % to place figures precisely within text using the H option: \begin{figure}[H]
+\usepackage{wrapfig} % for text wrapping of figures
+\usepackage[font=footnotesize]{caption}  % (cf. http://www.peteryu.ca/tutorials/publishing/latex_captions)
+\usepackage[font=scriptsize]{subcaption}
+\captionsetup[figure]{labelformat=simple, labelsep=space, skip=0pt} % set labelformat = empty to eliminate figure caption labels
+\captionsetup[subfigure]{labelformat=parens, labelsep=space, skip=0pt}
+
+% Macros
+\input{\string~/repos/latex-code/macros/math}
 
 % Title formatting
 \usepackage{titlesec} % to change font settings of titles: http://www.ctex.org/documents/packages/layout/titlesec.pdf, and allow extra subsections using \paragraph{}
@@ -23,45 +35,32 @@
 \newcommand{\myauthor}[1]{\author{#1 \hfill \today}\date{}}
 
 % Section formatting
-\titleformat{\section}{\large\scshape}{\thesection}{1em}{\vspace{-0.5em}} % remove \thesection argument to remove numbering of sections
+\titleformat{\section}[block]{\large\bfseries\filcenter}{\thesection.}{0.4em}{}[\vspace{-0.25em}] % remove \thesection. to remove numbering of sections
+% \titleformat{\section}{\large\scshape}{\thesection}{1em}{\vspace{-0.5em}}
 
-% Figures
-\usepackage{graphicx}
-\usepackage{float} % to place figures precisely within text using the H option: \begin{figure}[H]
-\usepackage{wrapfig} % for text wrapping of figures
-% \graphicspath{{figures_path_1/}{~/figures_path_2/}} # set paths in which to look for figures
-
-% Figure captions (cf. http://www.peteryu.ca/tutorials/publishing/latex_captions)
-\usepackage[font=footnotesize]{caption}
-\usepackage[font=scriptsize]{subcaption}
-\captionsetup[figure]{labelformat=simple, labelsep=space, skip=0pt} % set labelformat = empty to eliminate figure caption labels
-\captionsetup[subfigure]{labelformat=parens, labelsep=space, skip=0pt}
-
-
-%% TITLE %%
+% Title
 \mytitle{My notes}
 \myauthor{Jorge Aurelio Men\'endez}
 
-
-%% BEGIN DOC %%
+%% Begin doc %%
 \begin{document}
 \maketitle
-% \tableofcontents
+\tableofcontents
 
 
-%% SECTION 1 %%
+%% Section %%
 \section{This section is useless}
 
 Mammalian motor systems are remarkably flexible.
 
 
-%% SECTION 2 %%
-\section{Section 2}
+%% Section %%
+\section{Another section}
 
-...is also useless.
+...that is also useless.
 
 
-%% BIBLIOGRAPHY %%
+%% Bibliography %%
 % \bibliographystyle{apalike}
 % \bibliography{refs}
 

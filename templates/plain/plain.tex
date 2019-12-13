@@ -1,5 +1,4 @@
 \documentclass[a4paper]{article}
-
 \usepackage[utf8x]{inputenc}
 \usepackage[a4paper,margin=1in]{geometry}
 
@@ -10,45 +9,46 @@
 
 % List formatting
 \usepackage{enumitem}
-% \setlist{nolistsep} % eliminates extra space in itemize and enumerate lists
+\setlist{nolistsep} % eliminates extra space in itemize and enumerate lists
 
 % Figures
 \usepackage{graphicx}
+% \graphicspath{{figures_path_1/}{~/figures_path_2/}} # set paths in which to look for figures
 \usepackage{float} % to place figures precisely within text using the H option: \begin{figure}[H]
 \usepackage{wrapfig} % for text wrapping of figures
-% \graphicspath{{figures_path_1/}{~/figures_path_2/}} # set paths in which to look for figures
-
-% Figure captions (cf. http://www.peteryu.ca/tutorials/publishing/latex_captions)
-\usepackage[font=footnotesize]{caption}
+\usepackage[font=footnotesize]{caption}  % (cf. http://www.peteryu.ca/tutorials/publishing/latex_captions)
 \usepackage[font=scriptsize]{subcaption}
 \captionsetup[figure]{labelformat=simple, labelsep=space, skip=0pt} % set labelformat = empty to eliminate figure caption labels
 \captionsetup[subfigure]{labelformat=parens, labelsep=space, skip=0pt}
 
+% Macros
+\input{\string~/repos/latex-code/macros/math}
 
-%% TITLE %%
+
+% Title
 \title{My Title}
 \author{Jorge Aurelio Men\'endez}
 
 
-%% BEGIN DOC %%
+% Begin doc
 \begin{document}
 \maketitle
 \tableofcontents
 
 
-%% SECTION 1 %%
+%% Section 1 %%
 \section{This section is useless}
 
 Mammalian motor systems are remarkably flexible.
 
 
-%% SECTION 2 %%
+%% Section 2 %%
 \section{Section 2}
 
 ...is also useless.
 
 
-%% BIBLIOGRAPHY %%
+%% Bibliography %%
 % \bibliographystyle{apalike}
 % \bibliography{refs}
 
