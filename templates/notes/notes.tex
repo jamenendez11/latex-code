@@ -2,16 +2,20 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[a4paper,margin=1in]{geometry}
 
-% Typical packages
+%% Typical packages
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-% List formatting
+%% List formatting
 \usepackage{enumitem}
-\setlist{nolistsep} % eliminates extra space in itemize and enumerate lists
+\setlist{topsep=5pt,itemsep=5pt,parsep=3pt}
+% topsep: space between list and surrounding text
+% itemsep: space between list items
+% parsep: space between paragraphs w/in a single list item
+\setlist[itemize,1]{label=$\triangleright$} % specifies symbol for level 1 of itemize lists
 
-% Figures
+%% Figures
 \usepackage{graphicx}
 % \graphicspath{{figures_path_1/}{~/figures_path_2/}} # set paths in which to look for figures
 \usepackage{float} % to place figures precisely within text using the H option: \begin{figure}[H]
@@ -21,10 +25,7 @@
 \captionsetup[figure]{labelformat=simple, labelsep=space, skip=0pt} % set labelformat = empty to eliminate figure caption labels
 \captionsetup[subfigure]{labelformat=parens, labelsep=space, skip=0pt}
 
-% Macros
-\input{\string~/repos/latex-code/macros/math}
-
-% Title formatting
+%% Title formatting
 \usepackage{titlesec} % to change font settings of titles: http://www.ctex.org/documents/packages/layout/titlesec.pdf, and allow extra subsections using \paragraph{}
 \usepackage{titling}
 \pretitle{\vspace{-3cm}\begin{flushleft}\Large}
@@ -34,33 +35,36 @@
 \newcommand{\mytitle}[1]{\title{\textbf{#1}}}
 \newcommand{\myauthor}[1]{\author{#1 \hfill \today}\date{}}
 
-% Section formatting
-\titleformat{\section}[block]{\large\bfseries\filcenter}{\thesection.}{0.4em}{}[\vspace{-0.25em}] % remove \thesection. to remove numbering of sections
-% \titleformat{\section}{\large\scshape}{\thesection}{1em}{\vspace{-0.5em}}
+%% Section formatting
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{\thesection.}{0.4em}{}[\vspace{-0.25em}] % remove \thesection. to remove numbering of sections
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
 
-% Title
+%% Macros
+\input{\string~/repos/latex-code/macros/math}
+
+%% Title
 \mytitle{My notes}
 \myauthor{Jorge Aurelio Men\'endez}
 
-%% Begin doc %%
+%% Begin doc
 \begin{document}
 \maketitle
 \tableofcontents
 
 
-%% Section %%
+%% Section
 \section{This section is useless}
 
 Mammalian motor systems are remarkably flexible.
 
 
-%% Section %%
+%% Section
 \section{Another section}
 
 ...that is also useless.
 
 
-%% Bibliography %%
+%% Bibliography
 % \bibliographystyle{apalike}
 % \bibliography{refs}
 
