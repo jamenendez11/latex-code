@@ -2,16 +2,16 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[a4paper,margin=1in]{geometry}
 
-% Typical packages
+%% Typical packages
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-% List formatting
+%% List formatting
 \usepackage{enumitem}
 \setlist{nolistsep} % eliminates extra space in itemize and enumerate lists
 
-% Figures
+%% Figures
 \usepackage{graphicx}
 % \graphicspath{{figures_path_1/}{~/figures_path_2/}} # set paths in which to look for figures
 \usepackage{float} % to place figures precisely within text using the H option: \begin{figure}[H]
@@ -21,16 +21,14 @@
 \captionsetup[figure]{labelformat=simple, labelsep=space, skip=0pt} % set labelformat = empty to eliminate figure caption labels
 \captionsetup[subfigure]{labelformat=parens, labelsep=space, skip=0pt}
 
-% Macros
-\input{\string~/repos/latex-code/macros/math}
+%% Macros
+% \usepackage{math} % my own macros: .sty file in TEXMFHOME/text/latex/
 
-
-% Title
+%% Title
 \title{My Title}
 \author{Jorge Aurelio Men\'endez}
 
-
-% Begin doc
+%% Begin doc
 \begin{document}
 \maketitle
 \tableofcontents

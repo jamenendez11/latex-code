@@ -14,19 +14,7 @@
 *.fdb_latexmk
 *.fls
 *.log
+*.out
 *.pdf
 *.synctex.gz
-*.sty
-*.cls
-*.zip
-*.cfg
-*.bbl
-*.blg
-*.nav
-*.snm
 *.toc
-
-# Other stuff
-*/__junk__/*
-*.out
-
