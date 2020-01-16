@@ -7,6 +7,7 @@
 \DeclareMathOperator*{\argmin}{arg\,min}                % argmin
 \newcommand{\p}[1]{\left( #1 \right)}                   % parentheses
 \newcommand{\brac}[1]{\left\{ #1 \right\}}              % brackets
+\newcommand{\sqbrac}[1]{\left[ #1 \right]}              % square brackets
 \newcommand{\expit}[1]{e^{#1}}                          % exponential
 \newcommand{\inv}[1]{#1^{-1}}                           % inverse
 \newcommand{\invp}[1]{\inv{\p{#1}}}                     % inverse w/ parentheses
@@ -20,7 +21,8 @@
 \renewcommand{\vec}[1]{\text{vec}\left[ #1 \right]}     % vectorize (N.B. overwriting latex \vec)
 
 % Statistics
-\newcommand{\expec}[1]{\left\langle #1 \right\rangle}   % expectation
+\newcommand{\expec}[1]{\left\langle #1 \right\rangle}   % expectation using angular bracket notation
+\newcommand{\expecE}[1]{\mathbb{E} \sqbrac{#1}}   % expectation using E notation
 \newcommand{\cov}[1]{\text{cov}\left[ #1 \right]}       % covariance
 \newcommand{\var}[1]{\text{Var}\left[ #1 \right]}       % variance
 \newcommand{\gauss}[2]{\mathcal{N}\p{#1, #2}}           % Gaussian distribution
