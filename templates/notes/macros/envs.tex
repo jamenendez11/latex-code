@@ -1,0 +1,39 @@
+%% Custom environments
+
+% Nice box environment
+\newenvironment{boxenv}
+    {\begin{center}
+    \begin{tabular}{|p{0.9\textwidth}|}
+    \hline\\
+    \vspace{-1.75em}
+    }
+    { 
+    \vspace{-2.25em}
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+% Set up theorem formatting
+\usepackage{amsthm}
+\newtheoremstyle{envstyle}      % name
+    {0em}                   % Space above
+    {0em}                   % Space below
+    {\upshape}                  % Body font
+    {}                          % Indent amount
+    {\bfseries}                 % Theorem head font
+    {}                          % Punctuation after theorem head
+    {0.5em}                       % Space after theorem head
+    {\thmname{#1}\thmnumber{ #2}.\textit{\thmnote{ #3}}}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{envstyle}
+
+% Theorem
+\newtheorem{mytheorem}{Theorem}
+\newenvironment{theorem}[1]
+    {\begin{boxenv}
+    \renewcommand\themytheorem{#1}\mytheorem % for custom numbering
+    }
+    { 
+    \endmytheorem
+    \end{boxenv}
+    }
