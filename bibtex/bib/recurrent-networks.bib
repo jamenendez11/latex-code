@@ -1,4 +1,11 @@
 
+@book{dayan2001_TheoreticalNeuroscienceComputational,
+  title = {Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems},
+  shorttitle = {Theoretical Neuroscience},
+  author = {Dayan, Peter and Abbott, Laurence F.},
+  year = {2001}
+}
+
 @article{depasquale2018PLOSONE_FullFORCETargetbasedMethod,
   title = {Full-{{FORCE}}: {{A}} Target-Based Method for Training Recurrent Networks},
   shorttitle = {Full-{{FORCE}}},
@@ -10,7 +17,6 @@
   issn = {1932-6203},
   doi = {10.1371/journal.pone.0191527},
   abstract = {Trained recurrent networks are powerful tools for modeling dynamic neural computations. We present a target-based method for modifying the full connectivity matrix of a recurrent network to train it to perform tasks involving temporally complex input/output transformations. The method introduces a second network during training to provide suitable ``target'' dynamics useful for performing the task. Because it exploits the full recurrent connectivity, the method produces networks that perform tasks with fewer neurons and greater noise robustness than traditional least-squares (FORCE) approaches. In addition, we show how introducing additional input signals into the target-generating network, which act as task hints, greatly extends the range of tasks that can be learned and provides control over the complexity and nature of the dynamics of the trained, task-performing network.},
-  file = {/Users/jorgeamenendez/Google Drive/paper-pdfs/recurrent-networks/DePasquale2018PLOS_ONE-full-FORCE.pdf;/Users/jorgeamenendez/Zotero/storage/MGYYBAHD/article.html},
   journal = {PLOS ONE},
   keywords = {Algorithms,Eigenvalues,Learning,Machine learning algorithms,Network analysis,Neural networks,Neuroscience,Signaling networks},
   language = {en},
@@ -27,7 +33,6 @@
   issn = {0896-6273},
   doi = {10.1016/j.neuron.2014.04.045},
   abstract = {Populations of neurons in motor cortex engage in complex transient dynamics of large amplitude during the execution of limb movements. Traditional network models with stochastically assigned synapses cannot reproduce this behavior. Here we introduce a class of cortical architectures with strong and random excitatory recurrence that is stabilized by intricate, fine-tuned inhibition, optimized from a~control theory perspective. Such networks transiently amplify specific activity states and can be used to reliably execute multidimensional movement patterns. Similar to the experimental observations, these transients must be preceded by a steady-state initialization phase from which the network relaxes back into the background state by way of complex internal dynamics. In our networks, excitation and inhibition are as tightly balanced as recently reported in experiments across several brain areas, suggesting inhibitory control of complex excitatory recurrence as a generic organizational principle in cortex.},
-  file = {/Users/jorgeamenendez/Google Drive/paper-pdfs/motor-control/Hennequin2014Neuron-Optimal_Control_of_Transient_Dynamics_in_Balanced_Networks_Supports_Generation.pdf;/Users/jorgeamenendez/Zotero/storage/VPGANNX8/S0896627314003602.html},
   journal = {Neuron},
   language = {en},
   number = {6}
@@ -39,10 +44,25 @@
   year = {2001},
   volume = {148},
   pages = {13},
-  file = {/Users/jorgeamenendez/Google Drive/paper-pdfs/recurrent-networks/Jaeger2001Bonn,_Germany_German_National_Research_Center_for_Information_Technology_GMD_Technical_Report-The_“echo_state”_approach_to_analysing_and_training_recurrent_neural.pdf},
   journal = {Bonn, Germany: German National Research Center for Information Technology GMD Technical Report},
   keywords = {reservoir computing},
   number = {34}
+}
+
+@article{mastrogiuseppe2018Neuron_LinkingConnectivityDynamics,
+  title = {Linking {{Connectivity}}, {{Dynamics}}, and {{Computations}} in {{Low}}-{{Rank Recurrent Neural Networks}}},
+  author = {Mastrogiuseppe, Francesca and Ostojic, Srdjan},
+  year = {2018},
+  month = aug,
+  volume = {99},
+  pages = {609-623.e29},
+  issn = {0896-6273},
+  doi = {10.1016/j.neuron.2018.07.003},
+  abstract = {Large-scale neural recordings have established that the transformation of sensory stimuli into motor outputs relies on low-dimensional dynamics at the population level, while individual neurons exhibit complex selectivity. Understanding how low-dimensional computations on mixed, distributed representations emerge from the structure of the recurrent connectivity and inputs to cortical networks is a major challenge. Here, we study a class of recurrent network models in which the connectivity is a sum of a random part and a minimal, low-dimensional structure. We show that, in such networks, the dynamics are low dimensional and can be directly inferred from connectivity using a geometrical approach. We exploit this understanding to determine minimal connectivity required to implement specific computations and find that the dynamical range and computational capacity quickly increase with the dimensionality of the connectivity structure. This framework produces testable experimental predictions for the relationship between connectivity, low-dimensional dynamics, and computational features of recorded neurons.},
+  journal = {Neuron},
+  keywords = {low dimensional dynamics,mixed selectivity,neural computations,recurrent neural networks},
+  language = {en},
+  number = {3}
 }
 
 @article{schuessler2019ArXiv190904358Q-Bio_DynamicsRandomRecurrent,
@@ -54,10 +74,22 @@
   archivePrefix = {arXiv},
   eprint = {1909.04358},
   eprinttype = {arxiv},
-  file = {/Users/jorgeamenendez/Google Drive/paper-pdfs/recurrent-networks/Schuessler2019arXiv1909.04358_[q-bio]-Dynamics_of_random_recurrent_networks_with_correlated_low-rank_structure.pdf},
   journal = {arXiv:1909.04358 [q-bio]},
   keywords = {random networks},
   primaryClass = {q-bio}
+}
+
+@article{sompolinsky1988Phys.Rev.Lett._ChaosRandomNeural,
+  title = {Chaos in {{Random Neural Networks}}},
+  author = {Sompolinsky, H. and Crisanti, A. and Sommers, H. J.},
+  year = {1988},
+  month = jul,
+  volume = {61},
+  pages = {259--262},
+  doi = {10.1103/PhysRevLett.61.259},
+  abstract = {A continuous-time dynamic model of a network of N nonlinear elements interacting via random asymmetric couplings is studied. A self-consistent mean-field theory, exact in the N\textrightarrow{$\infty$} limit, predicts a transition from a stationary phase to a chaotic phase occurring at a critical value of the gain parameter. The autocorrelations of the chaotic flow as well as the maximal Lyapunov exponent are calculated.},
+  journal = {Physical Review Letters},
+  number = {3}
 }
 
 @article{stroud2018Nat.Neurosci._MotorPrimitivesSpace,
@@ -71,14 +103,13 @@
   doi = {10.1038/s41593-018-0276-0},
   abstract = {Many behavioral tasks require fast, reliable switching of the shape and duration of cortical activity. Stroud et al. show that modulation of neural excitability in recurrent network models provides flexible spatiotemporal control of neural activity.},
   copyright = {2018 The Author(s), under exclusive licence to Springer Nature America, Inc.},
-  file = {/Users/jorgeamenendez/Google Drive/paper-pdfs/recurrent-networks/Stroud2018Nature_Neuroscience-Motor_primitives_in_space_and_time_via_targeted_gain_modulation_in_cortical.pdf;/Users/jorgeamenendez/Zotero/storage/X8UKDKEA/s41593-018-0276-0.html},
   journal = {Nature Neuroscience},
   keywords = {neuroscience},
   language = {en},
   number = {12}
 }
 
-@article{sussillo2009Neuron_GeneratingCoherentPatternsa,
+@article{sussillo2009Neuron_GeneratingCoherentPatterns,
   title = {Generating {{Coherent Patterns}} of {{Activity}} from {{Chaotic Neural Networks}}},
   author = {Sussillo, David and Abbott, L. F.},
   year = {2009},
@@ -88,7 +119,6 @@
   issn = {0896-6273},
   doi = {10.1016/j.neuron.2009.07.018},
   abstract = {Neural circuits display complex activity patterns both spontaneously and when responding to a stimulus or generating a motor output. How are these two forms of activity related? We develop a procedure called FORCE learning for modifying synaptic strengths either external to or within a model neural network to change chaotic spontaneous activity into a wide variety of desired activity patterns. FORCE learning works even though the networks we train are spontaneously chaotic and we leave feedback loops intact and unclamped during learning. Using this approach, we construct networks that produce a wide variety of complex output patterns, input-output transformations that require memory, multiple outputs that can be switched by control inputs, and motor patterns matching human motion capture data. Our results reproduce data on premovement activity in motor and premotor cortex, and suggest that synaptic plasticity may be a more rapid and powerful modulator of network activity than generally appreciated.},
-  file = {/Users/jorgeamenendez/Google Drive/paper-pdfs/recurrent-networks/SussilloAbbott2009Neuron-Generating_Coherent_Patterns_of_Activity_from_Chaotic_Neural_Networks.pdf;/Users/jorgeamenendez/Zotero/storage/DR244VKG/S0896627309005479.html},
   journal = {Neuron},
   keywords = {SYSNEURO},
   language = {en},
@@ -106,7 +136,6 @@
   doi = {10.1038/s41593-018-0310-2},
   abstract = {Prefrontal cortex can be flexibly engaged in many different tasks. Yang et al. trained an artificial neural network to solve 20 cognitive tasks. Functionally specialized modules and compositional representations emerged in the network after training.},
   copyright = {2019 The Author(s), under exclusive licence to Springer Nature America, Inc.},
-  file = {/Users/jorgeamenendez/Google Drive/paper-pdfs/recurrent-networks/Yang2019Nat_Neurosci-Task_representations_in_neural_networks_trained_to_perform_many_cognitive_tasks.pdf;/Users/jorgeamenendez/Zotero/storage/ESYDBVKU/s41593-018-0310-2.html},
   journal = {Nature Neuroscience},
   language = {en},
   number = {2}
