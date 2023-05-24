@@ -1,4 +1,3 @@
-
 @inproceedings{alemi2018Proc.35thInt.Conf.Mach.Learn._FixingBrokenELBO,
   title = {Fixing a {{Broken ELBO}}},
   booktitle = {Proceedings of the 35th {{International Conference}} on {{Machine Learning}}},
@@ -8,8 +7,9 @@
   pages = {159--168},
   publisher = {{PMLR}},
   issn = {2640-3498},
+  urldate = {2022-03-14},
   abstract = {Recent work in unsupervised representation learning has focused on learning deep directed latentvariable models. Fitting these models by maximizing the marginal likelihood or evidence is typically intractable, thus a common approximation is to maximize the evidence lower bound (ELBO) instead. However, maximum likelihood training (whether exact or approximate) does not necessarily result in a good latent representation, as we demonstrate both theoretically and empirically. In particular, we derive variational lower and upper bounds on the mutual information between the input and the latent variable, and use these bounds to derive a rate-distortion curve that characterizes the tradeoff between compression and reconstruction accuracy. Using this framework, we demonstrate that there is a family of models with identical ELBO, but different quantitative and qualitative characteristics. Our framework also suggests a simple new method to ensure that latent variable models with powerful stochastic decoders do not ignore their latent code.},
-  language = {en}
+  langid = {english}
 }
 
 @article{alsallakh2020ArXiv201002178CsStat_MindPadCNNs,
@@ -19,10 +19,10 @@
   month = oct,
   journal = {arXiv:2010.02178 [cs, stat]},
   eprint = {2010.02178},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-02-18},
   abstract = {We show how feature maps in convolutional networks are susceptible to spatial bias. Due to a combination of architectural choices, the activation at certain locations is systematically elevated or weakened. The major source of this bias is the padding mechanism. Depending on several aspects of convolution arithmetic, this mechanism can apply the padding unevenly, leading to asymmetries in the learned weights. We demonstrate how such bias can be detrimental to certain tasks such as small object detection: the activation is suppressed if the stimulus lies in the impacted area, leading to blind spots and misdetection. We propose solutions to mitigate spatial bias and demonstrate how they can improve model accuracy.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Statistics - Machine Learning}
 }
 
@@ -36,9 +36,10 @@
   pages = {139--166},
   issn = {1932-1872},
   doi = {10.1002/sam.10151},
+  urldate = {2020-01-27},
   abstract = {Advances in data technology have enabled streaming acquisition of real-time information in a wide range of settings, including consumer credit, electricity consumption, and internet user behavior. Streaming data consist of transiently observed, temporally evolving data sequences, and poses novel challenges to statistical analysis. Foremost among these challenges are the need for online processing, and temporal adaptivity in the face of unforeseen changes, both smooth and abrupt, in the underlying data generation mechanism. In this paper, we develop streaming versions of two widely used parametric classifiers, namely quadratic and linear discriminant analysis. We rely on computationally efficient, recursive formulations of these classifiers. We additionally equip them with exponential forgetting factors that enable temporal adaptivity via smoothly down-weighting the contribution of older data. Drawing on ideas from adaptive filtering, we develop an online method for self-tuning forgetting factors on the basis of an approximate gradient scheme. We provide extensive simulation and real data analysis that demonstrate the effectiveness of the proposed method in handling diverse types of change, while simultaneously offering monitoring capabilities via interpretable behavior of the adaptive forgetting factors. \textcopyright{} 2012 Wiley Periodicals, Inc. Statistical Analysis and Data Mining, 2012},
   copyright = {Copyright \textcopyright{} 2012 Wiley Periodicals, Inc.},
-  language = {en},
+  langid = {english},
   keywords = {forgetting factor,linear discriminant analysis,online,streaming data,time-varying classification}
 }
 
@@ -49,10 +50,10 @@
   month = mar,
   journal = {arXiv:1907.02893 [cs, stat]},
   eprint = {1907.02893},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-02-05},
   abstract = {We introduce Invariant Risk Minimization (IRM), a learning paradigm to estimate invariant correlations across multiple training distributions. To achieve this goal, IRM learns a data representation such that the optimal classifier, on top of that data representation, matches for all training distributions. Through theory and experiments, we show how the invariances learned by IRM relate to the causal structures governing the data and enable out-of-distribution generalization.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -63,10 +64,10 @@
   month = jul,
   journal = {arXiv:1607.06450 [cs, stat]},
   eprint = {1607.06450},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2022-02-23},
   abstract = {Training state-of-the-art, deep neural networks is computationally expensive. One way to reduce the training time is to normalize the activities of the neurons. A recently introduced technique called batch normalization uses the distribution of the summed input to a neuron over a mini-batch of training cases to compute a mean and variance which are then used to normalize the summed input to that neuron on each training case. This significantly reduces the training time in feed-forward neural networks. However, the effect of batch normalization is dependent on the mini-batch size and it is not obvious how to apply it to recurrent neural networks. In this paper, we transpose batch normalization into layer normalization by computing the mean and variance used for normalization from all of the summed inputs to the neurons in a layer on a single training case. Like batch normalization, we also give each neuron its own adaptive bias and gain which are applied after the normalization but before the non-linearity. Unlike batch normalization, layer normalization performs exactly the same computation at training and test times. It is also straightforward to apply to recurrent neural networks by computing the normalization statistics separately at each time step. Layer normalization is very effective at stabilizing the hidden state dynamics in recurrent networks. Empirically, we show that layer normalization can substantially reduce the training time compared with previously published techniques.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -77,21 +78,22 @@
   month = may,
   journal = {arXiv:1409.0473 [cs, stat]},
   eprint = {1409.0473},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-02-22},
   abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
 }
 
 @inproceedings{bartunov2018Adv.NeuralInf.Process.Syst.31_AssessingScalabilityBiologicallyMotivated,
-  title = {Assessing the {{Scalability}} of {{Biologically}}-{{Motivated Deep Learning Algorithms}} and {{Architectures}}},
+  title = {Assessing the {{Scalability}} of {{Biologically-Motivated Deep Learning Algorithms}} and {{Architectures}}},
   booktitle = {Advances in {{Neural Information Processing Systems}} 31},
   author = {Bartunov, Sergey and Santoro, Adam and Richards, Blake and Marris, Luke and Hinton, Geoffrey E and Lillicrap, Timothy},
   editor = {Bengio, S. and Wallach, H. and Larochelle, H. and Grauman, K. and {Cesa-Bianchi}, N. and Garnett, R.},
   year = {2018},
   pages = {9368--9378},
-  publisher = {{Curran Associates, Inc.}}
+  publisher = {{Curran Associates, Inc.}},
+  urldate = {2020-07-22}
 }
 
 @article{bethge2006J.Opt.Soc.Am.AJOSAA_FactorialCodingNatural,
@@ -107,9 +109,22 @@
   publisher = {{Optica Publishing Group}},
   issn = {1520-8532},
   doi = {10.1364/JOSAA.23.001253},
+  urldate = {2022-04-20},
   abstract = {The performance of unsupervised learning models for natural images is evaluated quantitatively by means of information theory. We estimate the gain in statistical independence (the multi-information reduction) achieved with independent component analysis (ICA), principal component analysis (PCA), zero-phase whitening, and predictive coding. Predictive coding is translated into the transform coding framework, where it can be characterized by the constraint of a triangular filter matrix. A randomly sampled whitening basis and the Haar wavelet are included in the comparison as well. The comparison of all these methods is carried out for different patch sizes, ranging from 2\texttimes 2 to 16\texttimes 16 pixels. In spite of large differences in the shape of the basis functions, we find only small differences in the multi-information between all decorrelation transforms (5\% or less) for all patch sizes. Among the second-order methods, PCA is optimal for small patch sizes and predictive coding performs best for large patch sizes. The extra gain achieved with ICA is always less than 2\%. In conclusion, the edge filters found with ICA lead to only a surprisingly small improvement in terms of its actual objective.},
   copyright = {\&\#169; 2006 Optical Society of America},
-  language = {EN}
+  langid = {english}
+}
+
+@inproceedings{bishop1994undefined_NoveltyDetectionNeural,
+  title = {Novelty {{Detection}} and {{Neural Network Validation}}},
+  booktitle = {{{IEE Proceedings}}: {{Vision}}, {{Image}} and {{Signal Processing}}. {{Special}} Issue on Applications of Neural Networks.},
+  author = {Bishop, Christopher},
+  year = {1994},
+  month = jan,
+  pages = {217--222},
+  urldate = {2022-10-04},
+  abstract = {One of the key factors which limits the use of neural networks in many industrial applica\-tions has been the difficulty of demonstrating that a trained network will continue to generate reli\-able outputs once it is in routine use. An import\-ant potential source of errors is novel input data; that is, input data which differ significantly [\ldots ]},
+  langid = {american}
 }
 
 @book{bishop2006_PatternRecognitionMachine,
@@ -117,7 +132,7 @@
   author = {Bishop, Christopher M},
   year = {2006},
   publisher = {{Springer}},
-  language = {en}
+  langid = {english}
 }
 
 @article{bouchacourt2020_AddressingTopologicalDefects,
@@ -125,8 +140,9 @@
   author = {Bouchacourt, Diane and Ibrahim, Mark and Deny, Stephane},
   year = {2020},
   month = sep,
+  urldate = {2021-03-15},
   abstract = {A core challenge in Machine Learning is to disentangle natural factors of variation in data (e.g. object shape vs pose).  A popular approach to disentanglement consists in learning to map each of...},
-  language = {en}
+  langid = {english}
 }
 
 @article{bowman2016ArXiv151106349Cs_GeneratingSentencesContinuous,
@@ -136,10 +152,10 @@
   month = may,
   journal = {arXiv:1511.06349 [cs]},
   eprint = {1511.06349},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-04-13},
   abstract = {The standard recurrent neural network language model (RNNLM) generates sentences one word at a time and does not work from an explicit global sentence representation. In this work, we introduce and study an RNN-based variational autoencoder generative model that incorporates distributed latent representations of entire sentences. This factorization allows it to explicitly model holistic properties of sentences such as style, topic, and high-level syntactic features. Samples from the prior over these sentence representations remarkably produce diverse and well-formed sentences through simple deterministic decoding. By examining paths through this latent space, we are able to generate coherent novel sentences that interpolate between known sentences. We present techniques for solving the difficult learning problem presented by this model, demonstrate its effectiveness in imputing missing words, explore many interesting properties of the model's latent sentence space, and present negative results on the use of the model in language modeling.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning}
 }
 
@@ -150,10 +166,10 @@
   month = nov,
   journal = {arXiv:2003.13913 [cs, stat]},
   eprint = {2003.13913},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2022-02-07},
   abstract = {We introduce manifold-learning flows (M-flows), a new class of generative models that simultaneously learn the data manifold as well as a tractable probability density on that manifold. Combining aspects of normalizing flows, GANs, autoencoders, and energy-based models, they have the potential to represent datasets with a manifold structure more faithfully and provide handles on dimensionality reduction, denoising, and out-of-distribution detection. We argue why such models should not be trained by maximum likelihood alone and present a new training algorithm that separates manifold and density updates. In a range of experiments we demonstrate how M-flows learn the data manifold and allow for better inference than standard flows in the ambient data space.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -164,10 +180,10 @@
   month = nov,
   journal = {arXiv:1509.00519 [cs, stat]},
   eprint = {1509.00519},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2022-02-08},
   abstract = {The variational autoencoder (VAE; Kingma, Welling (2014)) is a recently proposed generative model pairing a top-down generative network with a bottom-up recognition network which approximates posterior inference. It typically makes strong assumptions about posterior inference, for instance that the posterior distribution is approximately factorial, and that its parameters can be approximated with nonlinear regression from the observations. As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder (IWAE), a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions. We show empirically that IWAEs learn richer latent space representations than VAEs, leading to improved test log-likelihood on density estimation benchmarks.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -178,10 +194,10 @@
   month = apr,
   journal = {arXiv:1804.03599 [cs, stat]},
   eprint = {1804.03599},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-04},
   abstract = {We present new intuitions and theoretical assessments of the emergence of disentangled representation in variational autoencoders. Taking a rate-distortion theory perspective, we show the circumstances under which representations aligned with the underlying generative factors of variation of data emerge when optimising the modified ELBO bound in \$\textbackslash beta\$-VAE, as training progresses. From these insights, we propose a modification to the training regime of \$\textbackslash beta\$-VAE, that progressively increases the information capacity of the latent code during training. This modification facilitates the robust learning of disentangled representations in \$\textbackslash beta\$-VAE, without the previous trade-off in reconstruction accuracy.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -193,10 +209,10 @@
   month = may,
   journal = {arXiv:2012.09276 [cs]},
   eprint = {2012.09276},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-05-10},
   abstract = {Learning to disentangle and represent factors of variation in data is an important problem in AI. While many advances have been made to learn these representations, it is still unclear how to quantify disentanglement. While several metrics exist, little is known on their implicit assumptions, what they truly measure, and their limits. In consequence, it is difficult to interpret results when comparing different representations. In this work, we survey supervised disentanglement metrics and thoroughly analyze them. We propose a new taxonomy in which all metrics fall into one of three families: intervention-based, predictor-based and information-based. We conduct extensive experiments in which we isolate properties of disentangled representations, allowing stratified comparison along several axes. From our experiment results and analysis, we provide insights on relations between disentangled representation properties. Finally, we share guidelines on how to measure disentanglement.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
 }
 
@@ -207,6 +223,7 @@
   year = {2018},
   volume = {31},
   publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-04-20},
   abstract = {We present a signal representation framework called the sparse manifold transform that combines key ideas from sparse coding, manifold learning, and slow feature analysis. It turns non-linear transformations in the primary sensory signal space into linear interpolations in a representational embedding space while maintaining approximate invertibility. The sparse manifold transform is an unsupervised and generative framework that explicitly and simultaneously models the sparse discreteness and low-dimensional manifold structure found in natural scenes. When stacked, it also models hierarchical composition. We provide a theoretical description of the transform and demonstrate properties of the learned representation on both synthetic data and natural videos.}
 }
 
@@ -216,7 +233,8 @@
   author = {Chen, Ricky T. Q. and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David K},
   year = {2018},
   pages = {6571--6583},
-  publisher = {{Curran Associates, Inc.}}
+  publisher = {{Curran Associates, Inc.}},
+  urldate = {2020-08-02}
 }
 
 @inproceedings{chen2018NeuralInf.Process.Syst._IsolatingSourcesDisentanglement,
@@ -224,6 +242,23 @@
   booktitle = {Neural {{Information Processing Systems}}},
   author = {Chen, Ricky TQ and Li, Xuechen and Grosse, Roger and Duvenaud, David},
   year = {2018}
+}
+
+@misc{choi2019_WAICWhyGenerative,
+  title = {{{WAIC}}, but {{Why}}? {{Generative Ensembles}} for {{Robust Anomaly Detection}}},
+  shorttitle = {{{WAIC}}, but {{Why}}?},
+  author = {Choi, Hyunsun and Jang, Eric and Alemi, Alexander A.},
+  year = {2019},
+  month = may,
+  number = {arXiv:1810.01392},
+  eprint = {1810.01392},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1810.01392},
+  urldate = {2022-10-04},
+  abstract = {Machine learning models encounter Out-of-Distribution (OoD) errors when the data seen at test time are generated from a different stochastic generator than the one used to generate the training data. One proposal to scale OoD detection to high-dimensional data is to learn a tractable likelihood approximation of the training distribution, and use it to reject unlikely inputs. However, likelihood models on natural data are themselves susceptible to OoD errors, and even assign large likelihoods to samples from other datasets. To mitigate this problem, we propose Generative Ensembles, which robustify density-based OoD detection by way of estimating epistemic uncertainty of the likelihood model. We present a puzzling observation in need of an explanation -- although likelihood measures cannot account for the typical set of a distribution, and therefore should not be suitable on their own for OoD detection, WAIC performs surprisingly well in practice.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @article{chorowski2019IEEEACMTrans.AudioSpeechLang.Process._UnsupervisedSpeechRepresentation,
@@ -253,23 +288,24 @@
   publisher = {{Nature Publishing Group}},
   issn = {1476-4687},
   doi = {10.1038/337129a0},
+  urldate = {2020-07-22},
   abstract = {The remarkable properties of some recent computer algorithms for neural networks seemed to promise a fresh approach to understanding the computational properties of the brain. Unfortunately most of these neural nets are unrealistic in important respects.},
   copyright = {1989 Nature Publishing Group},
-  language = {en}
+  langid = {english}
 }
 
 @article{dinh2015ArXiv14108516Cs_NICENonlinearIndependent,
-  title = {{{NICE}}: {{Non}}-Linear {{Independent Components Estimation}}},
+  title = {{{NICE}}: {{Non-linear Independent Components Estimation}}},
   shorttitle = {{{NICE}}},
   author = {Dinh, Laurent and Krueger, David and Bengio, Yoshua},
   year = {2015},
   month = apr,
   journal = {arXiv:1410.8516 [cs]},
   eprint = {1410.8516},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-03-10},
   abstract = {We propose a deep learning framework for modeling complex high-dimensional densities called Non-linear Independent Component Estimation (NICE). It is based on the idea that a good representation is one in which the data has a distribution that is easy to model. For this purpose, a non-linear deterministic transformation of the data is learned that maps it to a latent space so as to make the transformed data conform to a factorized distribution, i.e., resulting in independent latent variables. We parametrize this transformation so that computing the Jacobian determinant and inverse transform is trivial, yet we maintain the ability to learn complex non-linear transformations, via a composition of simple building blocks, each based on a deep neural network. The training criterion is simply the exact log-likelihood, which is tractable. Unbiased ancestral sampling is also easy. We show that this approach yields good generative models on four image datasets and can be used for inpainting.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning}
 }
 
@@ -280,10 +316,10 @@
   month = aug,
   journal = {arXiv:1606.05908 [cs, stat]},
   eprint = {1606.05908},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-04},
   abstract = {In just three years, Variational Autoencoders (VAEs) have emerged as one of the most popular approaches to unsupervised learning of complicated distributions. VAEs are appealing because they are built on top of standard function approximators (neural networks), and can be trained with stochastic gradient descent. VAEs have already shown promise in generating many kinds of complicated data, including handwritten digits, faces, house numbers, CIFAR images, physical models of scenes, segmentation, and predicting the future from static images. This tutorial introduces the intuitions behind VAEs, explains the mathematics behind them, and describes some empirical behavior. No prior knowledge of variational Bayesian methods is assumed.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -294,12 +330,12 @@
   month = feb,
   number = {arXiv:1905.12614},
   eprint = {1905.12614},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
   institution = {{arXiv}},
   doi = {10.48550/arXiv.1905.12614},
+  urldate = {2022-05-17},
   abstract = {Disentangled representations have recently been shown to improve fairness, data efficiency and generalisation in simple supervised and reinforcement learning tasks. To extend the benefits of disentangled representations to more complex domains and practical applications, it is important to enable hyperparameter tuning and model selection of existing unsupervised approaches without requiring access to ground truth attribute labels, which are not available for most datasets. This paper addresses this problem by introducing a simple yet robust and reliable method for unsupervised disentangled model selection. Our approach, Unsupervised Disentanglement Ranking (UDR), leverages the recent theoretical results that explain why variational autoencoders disentangle (Rolinek et al, 2019), to quantify the quality of disentanglement by performing pairwise comparisons between trained model representations. We show that our approach performs comparably to the existing supervised alternatives across 5,400 models from six state of the art unsupervised disentangled representation learning model classes. Furthermore, we show that the ranking produced by our approach correlates well with the final task performance on two different domains.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -311,7 +347,8 @@
   volume = {12},
   number = {61},
   pages = {2121--2159},
-  issn = {1533-7928}
+  issn = {1533-7928},
+  urldate = {2020-08-05}
 }
 
 @article{dumoulin2018ArXiv160307285CsStat_GuideConvolutionArithmetic,
@@ -321,10 +358,10 @@
   month = jan,
   journal = {arXiv:1603.07285 [cs, stat]},
   eprint = {1603.07285},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-02-05},
   abstract = {We introduce a guide to help deep learning practitioners understand and manipulate convolutional neural network architectures. The guide clarifies the relationship between various properties (input shape, kernel shape, zero padding, strides and output shape) of convolutional, pooling and transposed convolutional layers, as well as the relationship between convolutional and transposed convolutional layers. Relationships are derived for various cases, and are illustrated in order to make them intuitive.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
 }
 
@@ -334,8 +371,9 @@
   author = {Eastwood, Cian and Williams, Christopher K. I.},
   year = {2022},
   month = feb,
+  urldate = {2022-08-01},
   abstract = {Recent AI research has emphasised the importance of learning disentangled representations of the explanatory factors  behind data. Despite the growing interest in models which can learn such...},
-  language = {en}
+  langid = {english}
 }
 
 @article{esmaeili2018ArXiv180402086CsStat_StructuredDisentangledRepresentations,
@@ -345,25 +383,41 @@
   month = dec,
   journal = {arXiv:1804.02086 [cs, stat]},
   eprint = {1804.02086},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-05},
   abstract = {Deep latent-variable models learn representations of high-dimensional data in an unsupervised manner. A number of recent efforts have focused on learning representations that disentangle statistically independent axes of variation by introducing modifications to the standard objective function. These approaches generally assume a simple diagonal Gaussian prior and as a result are not able to reliably disentangle discrete factors of variation. We propose a two-level hierarchical objective to control relative degree of statistical independence between blocks of variables and individual variables within blocks. We derive this objective as a generalization of the evidence lower bound, which allows us to explicitly represent the trade-offs between mutual information between data and representation, KL divergence between representation and prior, and coverage of the support of the empirical data distribution. Experiments on a variety of datasets demonstrate that our objective can not only disentangle discrete variables, but that doing so also improves disentanglement of other variables and, importantly, generalization even to unseen combinations of factors.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
+@misc{fetaya2020_UnderstandingLimitationsConditional,
+  title = {Understanding the {{Limitations}} of {{Conditional Generative Models}}},
+  author = {Fetaya, Ethan and Jacobsen, J{\"o}rn-Henrik and Grathwohl, Will and Zemel, Richard},
+  year = {2020},
+  month = feb,
+  number = {arXiv:1906.01171},
+  eprint = {1906.01171},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  urldate = {2022-10-04},
+  abstract = {Class-conditional generative models hold promise to overcome the shortcomings of their discriminative counterparts. They are a natural choice to solve discriminative tasks in a robust manner as they jointly optimize for predictive performance and accurate modeling of the input distribution. In this work, we investigate robust classification with likelihood-based generative models from a theoretical and practical perspective to investigate if they can deliver on their promises. Our analysis focuses on a spectrum of robustness properties: (1) Detection of worst-case outliers in the form of adversarial examples; (2) Detection of average-case outliers in the form of ambiguous inputs and (3) Detection of incorrectly labeled in-distribution inputs.},
+  archiveprefix = {arxiv},
+  langid = {english},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @article{fortuin2019ArXiv180602199CsStat_SOMVAEInterpretableDiscrete,
-  title = {{{SOM}}-{{VAE}}: {{Interpretable Discrete Representation Learning}} on {{Time Series}}},
-  shorttitle = {{{SOM}}-{{VAE}}},
+  title = {{{SOM-VAE}}: {{Interpretable Discrete Representation Learning}} on {{Time Series}}},
+  shorttitle = {{{SOM-VAE}}},
   author = {Fortuin, Vincent and H{\"u}ser, Matthias and Locatello, Francesco and Strathmann, Heiko and R{\"a}tsch, Gunnar},
   year = {2019},
   month = jan,
   journal = {arXiv:1806.02199 [cs, stat]},
   eprint = {1806.02199},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-02-03},
   abstract = {High-dimensional time series are common in many domains. Since human cognition is not optimized to work well in high-dimensional spaces, these areas could benefit from interpretable low-dimensional representations. However, most representation learning algorithms for time series data are difficult to interpret. This is due to non-intuitive mappings from data features to salient properties of the representation and non-smoothness over time. To address this problem, we propose a new representation learning framework building on ideas from interpretable discrete dimensionality reduction and deep generative modeling. This framework allows us to learn discrete representations of time series, which give rise to smooth and interpretable embeddings with superior clustering performance. We introduce a new way to overcome the non-differentiability in discrete representation learning and present a gradient-based version of the traditional self-organizing map algorithm that is more performant than the original. Furthermore, to allow for a probabilistic interpretation of our method, we integrate a Markov model in the representation space. This model uncovers the temporal transition structure, improves clustering performance even further and provides additional explanatory insights as well as a natural representation of uncertainty. We evaluate our model in terms of clustering performance and interpretability on static (Fashion-)MNIST data, a time series of linearly interpolated (Fashion-)MNIST images, a chaotic Lorenz attractor system with two macro states, as well as on a challenging real world medical time series application on the eICU data set. Our learned representations compare favorably with competitor methods and facilitate downstream tasks on the real world data.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -375,10 +429,10 @@
   month = jun,
   journal = {arXiv:1903.10145 [cs, stat]},
   eprint = {1903.10145},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2022-04-18},
   abstract = {Variational autoencoders (VAEs) with an auto-regressive decoder have been applied for many natural language processing (NLP) tasks. The VAE objective consists of two terms, (i) reconstruction and (ii) KL regularization, balanced by a weighting hyper-parameter \textbackslash beta. One notorious training difficulty is that the KL term tends to vanish. In this paper we study scheduling schemes for \textbackslash beta, and show that KL vanishing is caused by the lack of good latent codes in training the decoder at the beginning of optimization. To remedy this, we propose a cyclical annealing schedule, which repeats the process of increasing \textbackslash beta multiple times. This new procedure allows the progressive learning of more meaningful latent codes, by leveraging the informative representations of previous cycles as warm re-starts. The effectiveness of cyclical annealing is validated on a broad range of NLP tasks, including language modeling, dialog response generation and unsupervised language pre-training.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -390,11 +444,11 @@
   month = apr,
   journal = {arXiv:1706.02677 [cs]},
   eprint = {1706.02677},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-03-29},
   abstract = {Deep learning thrives with large neural networks and large datasets. However, larger networks and larger datasets result in longer training times that impede research and development progress. Distributed synchronous SGD offers a potential solution to this problem by dividing SGD minibatches over a pool of parallel workers. Yet to make this scheme efficient, the per-worker workload must be large, which implies nontrivial growth in the SGD minibatch size. In this paper, we empirically show that on the ImageNet dataset large minibatches cause optimization difficulties, but when these are addressed the trained networks exhibit good generalization. Specifically, we show no loss of accuracy when training with large minibatch sizes up to 8192 images. To achieve this result, we adopt a hyper-parameter-free linear scaling rule for adjusting learning rates as a function of minibatch size and develop a new warmup scheme that overcomes optimization challenges early in training. With these simple techniques, our Caffe2-based system trains ResNet-50 with a minibatch size of 8192 on 256 GPUs in one hour, while matching small minibatch accuracy. Using commodity hardware, our implementation achieves \textasciitilde 90\% scaling efficiency when moving from 8 to 256 GPUs. Our findings enable training visual recognition models on internet-scale data with high efficiency.},
-  archiveprefix = {arXiv},
-  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Distributed; Parallel; and Cluster Computing,Computer Science - Machine Learning}
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,{Computer Science - Distributed, Parallel, and Cluster Computing},Computer Science - Machine Learning}
 }
 
 @article{gregor2015ArXiv150204623Cs_DRAWRecurrentNeural,
@@ -405,24 +459,38 @@
   month = may,
   journal = {arXiv:1502.04623 [cs]},
   eprint = {1502.04623},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-01-04},
   abstract = {This paper introduces the Deep Recurrent Attentive Writer (DRAW) neural network architecture for image generation. DRAW networks combine a novel spatial attention mechanism that mimics the foveation of the human eye, with a sequential variational auto-encoding framework that allows for the iterative construction of complex images. The system substantially improves on the state of the art for generative models on MNIST, and, when trained on the Street View House Numbers dataset, it generates images that cannot be distinguished from real data with the naked eye.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing}
 }
 
+@inproceedings{guo2017Proc.34thInt.Conf.Mach.Learn._CalibrationModernNeural,
+  title = {On {{Calibration}} of {{Modern Neural Networks}}},
+  booktitle = {Proceedings of the 34th {{International Conference}} on {{Machine Learning}}},
+  author = {Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.},
+  year = {2017},
+  month = jul,
+  pages = {1321--1330},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  urldate = {2023-01-05},
+  abstract = {Confidence calibration \textendash{} the problem of predicting probability estimates representative of the true correctness likelihood \textendash{} is important for classification models in many applications. We discover that modern neural networks, unlike those from a decade ago, are poorly calibrated. Through extensive experiments, we observe that depth, width, weight decay, and Batch Normalization are important factors influencing calibration. We evaluate the performance of various post-processing calibration methods on state-of-the-art architectures with image and document classification datasets. Our analysis and experiments not only offer insights into neural network learning, but also provide a simple and straightforward recipe for practical settings: on most datasets, temperature scaling \textendash{} a single-parameter variant of Platt Scaling \textendash{} is surprisingly effective at calibrating predictions.},
+  langid = {english}
+}
+
 @article{hannun2019ArXiv190402619Cs_SequencetoSequenceSpeechRecognition,
-  title = {Sequence-to-{{Sequence Speech Recognition}} with {{Time}}-{{Depth Separable Convolutions}}},
+  title = {Sequence-to-{{Sequence Speech Recognition}} with {{Time-Depth Separable Convolutions}}},
   author = {Hannun, Awni and Lee, Ann and Xu, Qiantong and Collobert, Ronan},
   year = {2019},
   month = apr,
   journal = {arXiv:1904.02619 [cs]},
   eprint = {1904.02619},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-02-22},
   abstract = {We propose a fully convolutional sequence-to-sequence encoder architecture with a simple and efficient decoder. Our model improves WER on LibriSpeech while being an order of magnitude more efficient than a strong RNN baseline. Key to our approach is a time-depth separable convolution block which dramatically reduces the number of parameters in the model while keeping the receptive field large. We also give a stable and efficient beam search inference procedure which allows us to effectively integrate a language model. Coupled with a convolutional language model, our time-depth separable convolution architecture improves by more than 22\% relative WER over the best previously reported sequence-to-sequence results on the noisy LibriSpeech test set.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language}
 }
 
@@ -437,9 +505,38 @@
   pages = {245--258},
   issn = {0896-6273},
   doi = {10.1016/j.neuron.2017.06.011},
+  urldate = {2021-03-14},
   abstract = {The fields of neuroscience and artificial intelligence (AI) have a long and intertwined history. In more recent times, however, communication and collaboration between the two fields has become less commonplace. In this article, we argue that better understanding biological brains could play a vital role in building intelligent machines. We survey historical interactions between the AI and neuroscience fields and emphasize current advances in AI that have been inspired by the study of neural computation in humans and other animals. We conclude by highlighting shared themes that may be key for advancing future research in both fields.},
-  language = {en},
+  langid = {english},
   keywords = {artificial intelligence,brain,cognition,learning,neural network}
+}
+
+@inproceedings{havtorn2021Proc.38thInt.Conf.Mach.Learn._HierarchicalVAEsKnow,
+  title = {Hierarchical {{VAEs Know What They Don}}'t {{Know}}},
+  booktitle = {Proceedings of the 38th {{International Conference}} on {{Machine Learning}}},
+  author = {Havtorn, Jakob D. and Frellsen, Jes and Hauberg, S{\o}ren and Maal{\o}e, Lars},
+  year = {2021},
+  month = jul,
+  pages = {4117--4128},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  urldate = {2022-10-04},
+  abstract = {Deep generative models have been demonstrated as state-of-the-art density estimators. Yet, recent work has found that they often assign a higher likelihood to data from outside the training distribution. This seemingly paradoxical behavior has caused concerns over the quality of the attained density estimates. In the context of hierarchical variational autoencoders, we provide evidence to explain this behavior by out-of-distribution data having in-distribution low-level features. We argue that this is both expected and desirable behavior. With this insight in hand, we develop a fast, scalable and fully unsupervised likelihood-ratio score for OOD detection that requires data to be in-distribution across all feature-levels. We benchmark the method on a vast set of data and model combinations and achieve state-of-the-art results on out-of-distribution detection.},
+  langid = {english}
+}
+
+@inproceedings{havtorn2021Proc.38thInt.Conf.Mach.Learn._HierarchicalVAEsKnowa,
+  title = {Hierarchical {{VAEs Know What They Don}}'t {{Know}}},
+  booktitle = {Proceedings of the 38th {{International Conference}} on {{Machine Learning}}},
+  author = {Havtorn, Jakob D. and Frellsen, Jes and Hauberg, S{\o}ren and Maal{\o}e, Lars},
+  year = {2021},
+  month = jul,
+  pages = {4117--4128},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  urldate = {2022-09-01},
+  abstract = {Deep generative models have been demonstrated as state-of-the-art density estimators. Yet, recent work has found that they often assign a higher likelihood to data from outside the training distribution. This seemingly paradoxical behavior has caused concerns over the quality of the attained density estimates. In the context of hierarchical variational autoencoders, we provide evidence to explain this behavior by out-of-distribution data having in-distribution low-level features. We argue that this is both expected and desirable behavior. With this insight in hand, we develop a fast, scalable and fully unsupervised likelihood-ratio score for OOD detection that requires data to be in-distribution across all feature-levels. We benchmark the method on a vast set of data and model combinations and achieve state-of-the-art results on out-of-distribution detection.},
+  langid = {english}
 }
 
 @book{haykin2005_AdaptiveFilterTheory,
@@ -449,14 +546,31 @@
   publisher = {{Pearson Education India}}
 }
 
+@misc{hendrycks2019_DeepAnomalyDetection,
+  title = {Deep {{Anomaly Detection}} with {{Outlier Exposure}}},
+  author = {Hendrycks, Dan and Mazeika, Mantas and Dietterich, Thomas},
+  year = {2019},
+  month = jan,
+  number = {arXiv:1812.04606},
+  eprint = {1812.04606},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1812.04606},
+  urldate = {2022-10-13},
+  abstract = {It is important to detect anomalous inputs when deploying machine learning systems. The use of larger and more complex inputs in deep learning magnifies the difficulty of distinguishing between anomalous and in-distribution examples. At the same time, diverse image and text data are available in enormous quantities. We propose leveraging these data to improve deep anomaly detection by training anomaly detectors against an auxiliary dataset of outliers, an approach we call Outlier Exposure (OE). This enables anomaly detectors to generalize and detect unseen anomalies. In extensive experiments on natural language processing and small- and large-scale vision tasks, we find that Outlier Exposure significantly improves detection performance. We also observe that cutting-edge generative models trained on CIFAR-10 may assign higher likelihoods to SVHN images than to CIFAR-10 images; we use OE to mitigate this issue. We also analyze the flexibility and robustness of Outlier Exposure, and identify characteristics of the auxiliary dataset that improve performance.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
 @article{higgins2016_BetaVAELearningBasic,
   title = {Beta-{{VAE}}: {{Learning Basic Visual Concepts}} with a {{Constrained Variational Framework}}},
   shorttitle = {Beta-{{VAE}}},
   author = {Higgins, Irina and Matthey, Loic and Pal, Arka and Burgess, Christopher and Glorot, Xavier and Botvinick, Matthew and Mohamed, Shakir and Lerchner, Alexander},
   year = {2016},
   month = nov,
+  urldate = {2021-01-04},
   abstract = {We introduce beta-VAE, a new state-of-the-art framework for automated discovery of interpretable factorised latent representations from raw image data in a completely unsupervised manner.},
-  language = {en}
+  langid = {english}
 }
 
 @article{hinton2012ArXiv12070580Cs_ImprovingNeuralNetworks,
@@ -466,10 +580,10 @@
   month = jul,
   journal = {arXiv:1207.0580 [cs]},
   eprint = {1207.0580},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-02-18},
   abstract = {When a large feedforward neural network is trained on a small training set, it typically performs poorly on held-out test data. This "overfitting" is greatly reduced by randomly omitting half of the feature detectors on each training case. This prevents complex co-adaptations in which a feature detector is only helpful in the context of several other specific feature detectors. Instead, each neuron learns to detect a feature that is generally helpful for producing the correct answer given the combinatorially large variety of internal contexts in which it must operate. Random "dropout" gives big improvements on many benchmark tasks and sets new records for speech and object recognition.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing}
 }
 
@@ -494,7 +608,7 @@
   doi = {10.1007/3-540-44668-0_13},
   abstract = {This paper introduces the application of gradient descent methods to meta-learning. The concept of ``meta-learning'', i.e. of a system that improves or discovers a learning algorithm, has been of interest in machine learning for decades because of its appealing applications. Previous meta-learning approaches have been based on evolutionary methods and, therefore, have been restricted to small models with few free parameters. We make meta-learning in large systems feasible by using recurrent neural networks with their attendant learning routines as meta-learning systems. Our system derived complex well performing learning algorithms from scratch. In this paper we also show that our approach performs non-stationary time series prediction.},
   isbn = {978-3-540-44668-2},
-  language = {en},
+  langid = {english},
   keywords = {Boolean Function,Gradient Descent,Hide Layer,Learning Algorithm,Turing Machine}
 }
 
@@ -504,7 +618,7 @@
   year = {2016},
   pages = {4},
   abstract = {We rewrite the variational evidence lower bound objective (ELBO) of variational autoencoders in a way that highlights the role of the encoded data distribution. This perspective suggests that to improve our variational bounds we should improve our priors and not just the encoder and decoder.},
-  language = {en}
+  langid = {english}
 }
 
 @inproceedings{hsu2017Adv.NeuralInf.Process.Syst._UnsupervisedLearningDisentangled,
@@ -522,10 +636,10 @@
   month = dec,
   journal = {arXiv:1810.07217 [cs, eess]},
   eprint = {1810.07217},
-  eprinttype = {arxiv},
   primaryclass = {cs, eess},
+  urldate = {2022-02-17},
   abstract = {This paper proposes a neural sequence-to-sequence text-to-speech (TTS) model which can control latent attributes in the generated speech that are rarely annotated in the training data, such as speaking style, accent, background noise, and recording conditions. The model is formulated as a conditional generative model based on the variational autoencoder (VAE) framework, with two levels of hierarchical latent variables. The first level is a categorical variable, which represents attribute groups (e.g. clean/noisy) and provides interpretability. The second level, conditioned on the first, is a multivariate Gaussian variable, which characterizes specific attribute configurations (e.g. noise level, speaking rate) and enables disentangled fine-grained control over these attributes. This amounts to using a Gaussian mixture model (GMM) for the latent distribution. Extensive evaluation demonstrates its ability to control the aforementioned attributes. In particular, we train a high-quality controllable TTS model on real found data, which is capable of inferring speaker and style attributes from a noisy utterance and use it to synthesize clean speech with controllable speaking style.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing}
 }
 
@@ -543,17 +657,17 @@
 }
 
 @article{humayun2022ArXiv220301993Cs_PolaritySamplingQuality,
-  title = {Polarity {{Sampling}}: {{Quality}} and {{Diversity Control}} of {{Pre}}-{{Trained Generative Networks}} via {{Singular Values}}},
+  title = {Polarity {{Sampling}}: {{Quality}} and {{Diversity Control}} of {{Pre-Trained Generative Networks}} via {{Singular Values}}},
   shorttitle = {Polarity {{Sampling}}},
   author = {Humayun, Ahmed Imtiaz and Balestriero, Randall and Baraniuk, Richard},
   year = {2022},
   month = mar,
   journal = {arXiv:2203.01993 [cs]},
   eprint = {2203.01993},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-04-01},
   abstract = {We present Polarity Sampling, a theoretically justified plug-and-play method for controlling the generation quality and diversity of pre-trained deep generative networks DGNs). Leveraging the fact that DGNs are, or can be approximated by, continuous piecewise affine splines, we derive the analytical DGN output space distribution as a function of the product of the DGN's Jacobian singular values raised to a power \$\textbackslash rho\$. We dub \$\textbackslash rho\$ the \$\textbackslash textbf\{polarity\}\$ parameter and prove that \$\textbackslash rho\$ focuses the DGN sampling on the modes (\$\textbackslash rho {$<$} 0\$) or anti-modes (\$\textbackslash rho {$>$} 0\$) of the DGN output-space distribution. We demonstrate that nonzero polarity values achieve a better precision-recall (quality-diversity) Pareto frontier than standard methods, such as truncation, for a number of state-of-the-art DGNs. We also present quantitative and qualitative results on the improvement of overall generation quality (e.g., in terms of the Frechet Inception Distance) for a number of state-of-the-art DGNs, including StyleGAN3, BigGAN-deep, NVAE, for different conditional and unconditional image generation tasks. In particular, Polarity Sampling redefines the state-of-the-art for StyleGAN2 on the FFHQ Dataset to FID 2.57, StyleGAN2 on the LSUN Car Dataset to FID 2.27 and StyleGAN3 on the AFHQv2 Dataset to FID 3.95. Demo: bit.ly/polarity-demo-colab},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition}
 }
 
@@ -569,22 +683,23 @@
   pages = {429--439},
   issn = {0893-6080},
   doi = {10.1016/S0893-6080(98)00140-3},
+  urldate = {2021-01-05},
   abstract = {The question of existence and uniqueness of solutions for nonlinear independent component analysis is addressed. It is shown that if the space of mixing functions is not limited there exists always an infinity of solutions. In particular, it is shown how to construct parameterized families of solutions. The indeterminacies involved are not trivial, as in the linear case. Next, it is shown how to utilize some results of complex analysis to obtain uniqueness of solutions. We show that for two dimensions, the solution is unique up to a rotation, if the mixing function is constrained to be a conformal mapping together with some other assumptions. We also conjecture that the solution is strictly unique except in some degenerate cases, as the indeterminacy implied by the rotation is essentially similar to estimating the model of linear ICA.},
-  language = {en},
+  langid = {english},
   keywords = {Blind source separation,Feature extraction,Independent component analysis,Redundancy reduction}
 }
 
 @article{hyvarinen2016ArXiv160506336CsStat_UnsupervisedFeatureExtraction,
-  title = {Unsupervised {{Feature Extraction}} by {{Time}}-{{Contrastive Learning}} and {{Nonlinear ICA}}},
+  title = {Unsupervised {{Feature Extraction}} by {{Time-Contrastive Learning}} and {{Nonlinear ICA}}},
   author = {Hyvarinen, Aapo and Morioka, Hiroshi},
   year = {2016},
   month = may,
   journal = {arXiv:1605.06336 [cs, stat]},
   eprint = {1605.06336},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-05},
   abstract = {Nonlinear independent component analysis (ICA) provides an appealing framework for unsupervised feature learning, but the models proposed so far are not identifiable. Here, we first propose a new intuitive principle of unsupervised deep learning from time series which uses the nonstationary structure of the data. Our learning principle, time-contrastive learning (TCL), finds a representation which allows optimal discrimination of time segments (windows). Surprisingly, we show how TCL can be related to a nonlinear ICA model, when ICA is redefined to include temporal nonstationarities. In particular, we show that TCL combined with linear ICA estimates the nonlinear ICA model up to point-wise transformations of the sources, and this solution is unique --- thus providing the first identifiability result for nonlinear ICA which is rigorous, constructive, as well as very general.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -594,7 +709,24 @@
   year = {2017},
   pages = {14},
   abstract = {We develop a nonlinear generalization of independent component analysis (ICA) or blind source separation, based on temporal dependencies (e.g. autocorrelations). We introduce a nonlinear generative model where the independent sources are assumed to be temporally dependent, non-Gaussian, and stationary, and we observe arbitrarily nonlinear mixtures of them. We develop a method for estimating the model (i.e. separating the sources) based on logistic regression in a neural network which learns to discriminate between a short temporal window of the data vs. a temporal window of temporally permuted data. We prove that the method estimates the sources for general smooth mixing nonlinearities, assuming the sources have sufficiently strong temporal dependencies, and these dependencies are in a certain way different from dependencies found in Gaussian processes. For Gaussian (and similar) sources, the method estimates the nonlinear part of the mixing. We thus provide the first rigorous and general proof of identifiability of nonlinear ICA for temporally dependent stationary sources, together with a practical method for its estimation.},
-  language = {en}
+  langid = {english}
+}
+
+@misc{ioffe2015_BatchNormalizationAccelerating,
+  title = {Batch {{Normalization}}: {{Accelerating Deep Network Training}} by {{Reducing Internal Covariate Shift}}},
+  shorttitle = {Batch {{Normalization}}},
+  author = {Ioffe, Sergey and Szegedy, Christian},
+  year = {2015},
+  month = mar,
+  number = {arXiv:1502.03167},
+  eprint = {1502.03167},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1502.03167},
+  urldate = {2022-10-07},
+  abstract = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9\% top-5 validation error (and 4.8\% test error), exceeding the accuracy of human raters.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning}
 }
 
 @inproceedings{izbicki2013Int.Conf.Mach.Learn._AlgebraicClassifiersGeneric,
@@ -607,8 +739,9 @@
   pages = {648--656},
   publisher = {{PMLR}},
   issn = {1938-7228},
+  urldate = {2021-01-13},
   abstract = {We use abstract algebra to derive new algorithms for fast cross-validation, online learning, and parallel learning.  To use these algorithms on a classification model, we must show that the model h...},
-  language = {en}
+  langid = {english}
 }
 
 @article{jabri1992IEEETrans.NeuralNetw._WeightPerturbationOptimal,
@@ -634,10 +767,10 @@
   month = may,
   journal = {arXiv:1605.02971 [cs]},
   eprint = {1605.02971},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-02-23},
   abstract = {Learning powerful feature representations with CNNs is hard when training data are limited. Pre-training is one way to overcome this, but it requires large datasets sufficiently similar to the target domain. Another option is to design priors into the model, which can range from tuned hyperparameters to fully engineered representations like Scattering Networks. We combine these ideas into structured receptive field networks, a model which has a fixed filter basis and yet retains the flexibility of CNNs. This flexibility is achieved by expressing receptive fields in CNNs as a weighted sum over a fixed basis which is similar in spirit to Scattering Networks. The key difference is that we learn arbitrary effective filter sets from the basis rather than modeling the filters. This approach explicitly connects classical multiscale image analysis with general CNNs. With structured receptive field networks, we improve considerably over unstructured CNNs for small and medium dataset scenarios as well as over Scattering for large datasets. We validate our findings on ILSVRC2012, Cifar-10, Cifar-100 and MNIST. As a realistic small dataset example, we show state-of-the-art classification results on popular 3D MRI brain-disease datasets where pre-training is difficult due to a lack of large public datasets in a similar domain.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition}
 }
 
@@ -650,16 +783,16 @@
 }
 
 @article{jia2019ArXiv180604558CsEess_TransferLearningSpeaker,
-  title = {Transfer {{Learning}} from {{Speaker Verification}} to {{Multispeaker Text}}-{{To}}-{{Speech Synthesis}}},
+  title = {Transfer {{Learning}} from {{Speaker Verification}} to {{Multispeaker Text-To-Speech Synthesis}}},
   author = {Jia, Ye and Zhang, Yu and Weiss, Ron J. and Wang, Quan and Shen, Jonathan and Ren, Fei and Chen, Zhifeng and Nguyen, Patrick and Pang, Ruoming and Moreno, Ignacio Lopez and Wu, Yonghui},
   year = {2019},
   month = jan,
   journal = {arXiv:1806.04558 [cs, eess]},
   eprint = {1806.04558},
-  eprinttype = {arxiv},
   primaryclass = {cs, eess},
+  urldate = {2022-03-11},
   abstract = {We describe a neural network-based system for text-to-speech (TTS) synthesis that is able to generate speech audio in the voice of many different speakers, including those unseen during training. Our system consists of three independently trained components: (1) a speaker encoder network, trained on a speaker verification task using an independent dataset of noisy speech from thousands of speakers without transcripts, to generate a fixed-dimensional embedding vector from seconds of reference speech from a target speaker; (2) a sequence-to-sequence synthesis network based on Tacotron 2, which generates a mel spectrogram from text, conditioned on the speaker embedding; (3) an auto-regressive WaveNet-based vocoder that converts the mel spectrogram into a sequence of time domain waveform samples. We demonstrate that the proposed model is able to transfer the knowledge of speaker variability learned by the discriminatively-trained speaker encoder to the new task, and is able to synthesize natural speech from speakers that were not seen during training. We quantify the importance of training the speaker encoder on a large and diverse speaker set in order to obtain the best generalization performance. Finally, we show that randomly sampled speaker embeddings can be used to synthesize speech in the voice of novel speakers dissimilar from those used in training, indicating that the model has learned a high quality speaker representation.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing}
 }
 
@@ -670,7 +803,8 @@
   journal = {Advances in Neural Information Processing Systems},
   volume = {29},
   pages = {2946--2954},
-  language = {en}
+  urldate = {2021-01-05},
+  langid = {english}
 }
 
 @inproceedings{jun2020Proc.37thInt.Conf.Mach.Learn._DistributionAugmentationGenerative,
@@ -682,8 +816,9 @@
   pages = {5006--5019},
   publisher = {{PMLR}},
   issn = {2640-3498},
+  urldate = {2022-05-23},
   abstract = {We present distribution augmentation (DistAug), a simple and powerful method of regularizing generative models. Our approach applies augmentation functions to data and, importantly, conditions the generative model on the specific function used. Unlike typical data augmentation, DistAug allows usage of functions which modify the target density, enabling aggressive augmentations more commonly seen in supervised and self-supervised learning. We demonstrate this is a more effective regularizer than standard methods, and use it to train a 152M parameter autoregressive model on CIFAR-10 to 2.56 bits per dim (relative to the state-of-the-art 2.80). Samples from this model attain FID 12.75 and IS 8.40, outperforming the majority of GANs. We further demonstrate the technique is broadly applicable across model architectures and problem domains.},
-  language = {en}
+  langid = {english}
 }
 
 @article{khemakhem2020ArXiv190704809CsStat_VariationalAutoencodersNonlinear,
@@ -694,10 +829,10 @@
   month = dec,
   journal = {arXiv:1907.04809 [cs, stat]},
   eprint = {1907.04809},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-05},
   abstract = {The framework of variational autoencoders allows us to efficiently learn deep latent-variable models, such that the model's marginal distribution over observed variables fits the data. Often, we're interested in going a step further, and want to approximate the true joint distribution over observed and latent variables, including the true prior and posterior distributions over latent variables. This is known to be generally impossible due to unidentifiability of the model. We address this issue by showing that for a broad family of deep latent-variable models, identification of the true joint distribution over observed and latent variables is actually possible up to very simple transformations, thus achieving a principled and powerful form of disentanglement. Our result requires a factorized prior distribution over the latent variables that is conditioned on an additionally observed variable, such as a class label or almost any other observation. We build on recent developments in nonlinear ICA, which we extend to the case with noisy, undercomplete or discrete observations, integrated in a maximum likelihood framework. The result also trivially contains identifiable flow-based generative models as a special case.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -708,10 +843,10 @@
   month = jul,
   journal = {arXiv:1802.05983 [cs, stat]},
   eprint = {1802.05983},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-04},
   abstract = {We define and address the problem of unsupervised learning of disentangled representations on data generated from independent factors of variation. We propose FactorVAE, a method that disentangles by encouraging the distribution of representations to be factorial and hence independent across the dimensions. We show that it improves upon \$\textbackslash beta\$-VAE by providing a better trade-off between disentanglement and reconstruction quality. Moreover, we highlight the problems of a commonly used disentanglement metric and introduce a new metric that does not suffer from them.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -722,10 +857,10 @@
   month = may,
   journal = {arXiv:1312.6114 [cs, stat]},
   eprint = {1312.6114},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-04},
   abstract = {How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -735,7 +870,8 @@
   author = {Kingma, Durk P and Salimans, Tim and Jozefowicz, Rafal and Chen, Xi and Sutskever, Ilya and Welling, Max},
   year = {2016},
   volume = {29},
-  publisher = {{Curran Associates, Inc.}}
+  publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-03-14}
 }
 
 @article{kingma2017ArXiv14126980Cs_AdamMethodStochastic,
@@ -746,10 +882,10 @@
   month = jan,
   journal = {arXiv:1412.6980 [cs]},
   eprint = {1412.6980},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-03-13},
   abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning}
 }
 
@@ -760,7 +896,8 @@
   author = {Kingma, Durk P and Dhariwal, Prafulla},
   year = {2018},
   volume = {31},
-  publisher = {{Curran Associates, Inc.}}
+  publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-03-10}
 }
 
 @article{kingma2019FNTinMachineLearning_IntroductionVariationalAutoencoders,
@@ -771,12 +908,12 @@
   volume = {12},
   number = {4},
   eprint = {1906.02691},
-  eprinttype = {arxiv},
   pages = {307--392},
   issn = {1935-8237, 1935-8245},
   doi = {10.1561/2200000056},
+  urldate = {2021-01-04},
   abstract = {Variational autoencoders provide a principled framework for learning deep latent-variable models and corresponding inference models. In this work, we provide an introduction to variational autoencoders and some important extensions.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -798,10 +935,10 @@
   month = dec,
   journal = {arXiv:1711.00848 [cs, stat]},
   eprint = {1711.00848},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-02-03},
   abstract = {Disentangled representations, where the higher level data generative factors are reflected in disjoint latent dimensions, offer several benefits such as ease of deriving invariant representations, transferability to other tasks, interpretability, etc. We consider the problem of unsupervised learning of disentangled representations from large pool of unlabeled observations, and propose a variational inference based approach to infer disentangled latent factors. We introduce a regularizer on the expectation of the approximate posterior over observed data that encourages the disentanglement. We also propose a new disentanglement metric which is better aligned with the qualitative disentanglement observed in the decoder's output. We empirically observe significant improvement over existing methods in terms of both disentanglement and data likelihood (reconstruction quality).},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -812,6 +949,7 @@
   year = {2019},
   volume = {32},
   publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-04-05},
   abstract = {The ability to automatically estimate the quality and coverage of the samples produced by a generative model is a vital requirement for driving algorithm research. We present an evaluation metric that can separately and reliably measure both of these aspects in image generation tasks by forming explicit, non-parametric representations of the manifolds of real and generated data. We demonstrate the effectiveness of our metric in StyleGAN and BigGAN by providing several illustrative examples where existing metrics yield uninformative or contradictory results. Furthermore, we analyze multiple design variants of StyleGAN to better understand the relationships between the model architecture, training methods, and the properties of the resulting sample distribution. In the process, we identify new variants that improve the state-of-the-art. We also perform the first principled analysis of truncation methods and identify an improved method. Finally, we extend our metric to estimate the perceptual quality of individual samples, and use this to study latent space interpolations.}
 }
 
@@ -822,21 +960,21 @@
   month = oct,
   number = {arXiv:2010.12016},
   eprint = {2010.12016},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
   institution = {{arXiv}},
   doi = {10.48550/arXiv.2010.12016},
+  urldate = {2022-06-15},
   abstract = {Methods for understanding the decisions of and mechanisms underlying deep neural networks (DNNs) typically rely on building intuition by emphasizing sensory or semantic features of individual examples. For instance, methods aim to visualize the components of an input which are "important" to a network's decision, or to measure the semantic properties of single neurons. Here, we argue that interpretability research suffers from an over-reliance on intuition-based approaches that risk-and in some cases have caused-illusory progress and misleading conclusions. We identify a set of limitations that we argue impede meaningful progress in interpretability research, and examine two popular classes of interpretability methods-saliency and single-neuron-based approaches-that serve as case studies for how overreliance on intuition and lack of falsifiability can undermine interpretability research. To address these concerns, we propose a strategy to address these impediments in the form of a framework for strongly falsifiable interpretability research. We encourage researchers to use their intuitions as a starting point to develop and test clear, falsifiable hypotheses, and hope that our framework yields robust, evidence-based interpretability methods that generate meaningful advances in our understanding of DNNs.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Computers and Society,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @article{lecunundefined_LossFunctionsDiscriminative,
-  title = {Loss {{Functions}} for {{Discriminative Training}} of {{Energy}}-{{Based Models}}.},
+  title = {Loss {{Functions}} for {{Discriminative Training}} of {{Energy-Based Models}}.},
   author = {LeCun, Yann and Huang, Fu Jie},
   pages = {8},
   abstract = {Probabilistic graphical models associate a probability to each configuration of the relevant variables. Energy-based models (EBM) associate an energy to those configurations, eliminating the need for proper normalization of probability distributions. Making a decision (an inference) with an EBM consists in comparing the energies associated with various configurations of the variable to be predicted, and choosing the one with the smallest energy. Such systems must be trained discriminatively to associate low energies to the desired configurations and higher energies to undesired configurations. A wide variety of loss function can be used for this purpose. We give sufficient conditions that a loss function should satisfy so that its minimization will cause the system to approach to desired behavior. We give many specific examples of suitable loss functions, and show an application to object recognition in images.},
-  language = {en}
+  langid = {english}
 }
 
 @article{li2018_DisentangledSequentialAutoencoder,
@@ -844,8 +982,25 @@
   author = {Li, Yingzhen and Mandt, Stephan},
   year = {2018},
   month = mar,
+  urldate = {2021-01-04},
   abstract = {We present a VAE architecture for encoding and generating high dimensional sequential data, such as video or audio. Our deep generative model learns a latent representation of the data which is split into a static and dynamic part, allowing us to approximately disentangle latent time-dependent features (dynamics) from features which are preserved over time (content). This architecture gives us partial control over generating content and dynamics by conditioning on either one of these sets of features. In our experiments on artificially generated cartoon video clips and voice recordings, we show that we can convert the content of a given sequence into another one by such content swapping. For audio, this allows us to convert a male speaker into a female speaker and vice versa, while for video we can separately manipulate shapes and dynamics. Furthermore, we give empirical evidence for the hypothesis that stochastic RNNs as latent state models are more efficient at compressing and generating long sequences than deterministic ones, which may be relevant for applications in video compression.},
-  language = {en}
+  langid = {english}
+}
+
+@misc{lindenbaum2022_ProbabilisticRobustAutoencoders,
+  title = {Probabilistic {{Robust Autoencoders}} for {{Outlier Detection}}},
+  author = {Lindenbaum, Ofir and Aizenbud, Yariv and Kluger, Yuval},
+  year = {2022},
+  month = aug,
+  number = {arXiv:2110.00494},
+  eprint = {2110.00494},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2110.00494},
+  urldate = {2022-10-04},
+  abstract = {Anomalies (or outliers) are prevalent in real-world empirical observations and potentially mask important underlying structures. Accurate identification of anomalous samples is crucial for the success of downstream data analysis tasks. To automatically identify anomalies, we propose Probabilistic Robust AutoEncoder (PRAE). PRAE aims to simultaneously remove outliers and identify a low-dimensional representation for the inlier samples. We first present the Robust AutoEncoder (RAE) objective as a minimization problem for splitting the data into inliers and outliers. Our objective is designed to exclude outliers while including a subset of samples (inliers) that can be effectively reconstructed using an AutoEncoder (AE). RAE minimizes the autoencoder's reconstruction error while incorporating as many samples as possible. This could be formulated via regularization by subtracting an \$\textbackslash ell\_0\$ norm counting the number of selected samples from the reconstruction term. Unfortunately, this leads to an intractable combinatorial problem. Therefore, we propose two probabilistic relaxations of RAE, which are differentiable and alleviate the need for a combinatorial search. We prove that the solution to the PRAE problem is equivalent to the solution of RAE. We use synthetic data to show that PRAE can accurately remove outliers in a wide range of contamination levels. Finally, we demonstrate that using PRAE for anomaly detection leads to state-of-the-art results on various benchmark datasets.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @inproceedings{locatello2019Int.Conf.Mach.Learn._ChallengingCommonAssumptions,
@@ -857,8 +1012,9 @@
   pages = {4114--4124},
   publisher = {{PMLR}},
   issn = {2640-3498},
+  urldate = {2021-02-03},
   abstract = {The key idea behind the unsupervised learning of disentangled representations is that real-world data is generated by a few explanatory factors of variation which can be recovered by unsupervised l...},
-  language = {en}
+  langid = {english}
 }
 
 @article{loshchilov2019ArXiv171105101CsMath_DecoupledWeightDecay,
@@ -868,21 +1024,22 @@
   month = jan,
   journal = {arXiv:1711.05101 [cs, math]},
   eprint = {1711.05101},
-  eprinttype = {arxiv},
   primaryclass = {cs, math},
+  urldate = {2021-03-03},
   abstract = {L\$\_2\$ regularization and weight decay regularization are equivalent for standard stochastic gradient descent (when rescaled by the learning rate), but as we demonstrate this is \textbackslash emph\{not\} the case for adaptive gradient algorithms, such as Adam. While common implementations of these algorithms employ L\$\_2\$ regularization (often calling it "weight decay" in what may be misleading due to the inequivalence we expose), we propose a simple modification to recover the original formulation of weight decay regularization by \textbackslash emph\{decoupling\} the weight decay from the optimization steps taken w.r.t. the loss function. We provide empirical evidence that our proposed modification (i) decouples the optimal choice of weight decay factor from the setting of the learning rate for both standard SGD and Adam and (ii) substantially improves Adam's generalization performance, allowing it to compete with SGD with momentum on image classification datasets (on which it was previously typically outperformed by the latter). Our proposed decoupled weight decay has already been adopted by many researchers, and the community has implemented it in TensorFlow and PyTorch; the complete source code for our experiments is available at https://github.com/loshchil/AdamW-and-SGDW},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Mathematics - Optimization and Control}
 }
 
 @inproceedings{lucic2018Adv.NeuralInf.Process.Syst._AreGANsCreated,
-  title = {Are {{GANs Created Equal}}? {{A Large}}-{{Scale Study}}},
+  title = {Are {{GANs Created Equal}}? {{A Large-Scale Study}}},
   shorttitle = {Are {{GANs Created Equal}}?},
   booktitle = {Advances in {{Neural Information Processing Systems}}},
   author = {Lucic, Mario and Kurach, Karol and Michalski, Marcin and Gelly, Sylvain and Bousquet, Olivier},
   year = {2018},
   volume = {31},
   publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-04-05},
   abstract = {Generative adversarial networks (GAN) are a powerful subclass of generative models. Despite a very rich research activity leading to numerous interesting GAN algorithms, it is still very hard to assess which algorithm(s) perform better than others.  We conduct a neutral, multi-faceted large-scale empirical study on state-of-the art models and evaluation measures. We find that most models can reach similar scores with enough hyperparameter optimization and random restarts. This suggests that improvements can arise from a higher computational budget and tuning more than fundamental algorithmic changes.  To overcome some limitations of the current metrics, we also propose several data sets on which precision and recall can be computed.  Our experimental results suggest that future GAN research should be based on more systematic and objective evaluation procedures. Finally, we did not find evidence that any of the tested algorithms consistently outperforms the non-saturating GAN introduced in \textbackslash cite\{goodfellow2014generative\}.}
 }
 
@@ -893,10 +1050,10 @@
   month = nov,
   journal = {arXiv:1406.3332 [cs, stat]},
   eprint = {1406.3332},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-03-11},
   abstract = {An important goal in visual recognition is to devise image representations that are invariant to particular transformations. In this paper, we address this goal with a new type of convolutional neural network (CNN) whose invariance is encoded by a reproducing kernel. Unlike traditional approaches where neural networks are learned either to represent data or for solving a classification task, our network learns to approximate the kernel feature map on training data. Such an approach enjoys several benefits over classical ones. First, by teaching CNNs to be invariant, we obtain simple network architectures that achieve a similar accuracy to more complex ones, while being easy to train and robust to overfitting. Second, we bridge a gap between the neural network literature and kernels, which are natural tools to model invariance. We evaluate our methodology on visual recognition tasks where CNNs have proven to perform well, e.g., digit recognition with the MNIST dataset, and the more challenging CIFAR-10 and STL-10 datasets, where our accuracy is competitive with the state of the art.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -912,9 +1069,10 @@
   publisher = {{National Academy of Sciences}},
   issn = {0027-8424, 1091-6490},
   doi = {10.1073/pnas.88.10.4433},
+  urldate = {2020-04-29},
   abstract = {Many recent studies have used artificial neural network algorithms to model how the brain might process information. However, back-propagation learning, the method that is generally used to train these networks, is distinctly "unbiological." We describe here a more biologically plausible learning rule, using reinforcement learning, which we have applied to the problem of how area 7a in the posterior parietal cortex of monkeys might represent visual space in head-centered coordinates. The network behaves similarly to networks trained by using back-propagation and to neurons recorded in area 7a. These results show that a neural network does not require back propagation to acquire biologically interesting properties.},
   chapter = {Research Article},
-  language = {en},
+  langid = {english},
   pmid = {1903542}
 }
 
@@ -924,6 +1082,7 @@
   author = {Merel, Josh and Hasenclever, Leonard and Galashov, Alexandre and Ahuja, Arun and Pham, Vu and Wayne, Greg and Teh, Yee Whye and Heess, Nicolas},
   year = {2018},
   month = sep,
+  urldate = {2020-07-17},
   abstract = {We focus on the problem of learning a single motor module that can flexibly express a range of behaviors for the control of high-dimensional physically simulated humanoids. To do this, we propose a...}
 }
 
@@ -940,6 +1099,52 @@
   doi = {10.1109/JRPROC.1961.287775},
   abstract = {The problems of heuristic programming-of making computers solve really difficult problems-are divided into five main areas: Search, Pattern-Recognition, Learning, Planning, and Induction. A computer can do, in a sense, only what it is told to do. But even when we do not know how to solve a certain problem, we may program a machine (computer) to Search through some large space of solution attempts. Unfortunately, this usually leads to an enormously inefficient process. With Pattern-Recognition techniques, efficiency can often be improved, by restricting the application of the machine's methods to appropriate problems. Pattern-Recognition, together with Learning, can be used to exploit generalizations based on accumulated experience, further reducing search. By analyzing the situation, using Planning methods, we may obtain a fundamental improvement by replacing the given search with a much smaller, more appropriate exploration. To manage broad classes of problems, machines will need to construct models of their environments, using some scheme for Induction. Wherever appropriate, the discussion is supported by extensive citation of the literature and by descriptions of a few of the most successful heuristic (problem-solving) programs constructed to date.},
   keywords = {Application software,Artificial intelligence,Environmental management,High performance computing,Information processing,Libraries,Military computing,Planets,Problem-solving,Technological innovation}
+}
+
+@inproceedings{morningstar2021Proc.24thInt.Conf.Artif.Intell.Stat._DensityStatesEstimation,
+  title = {Density of {{States Estimation}} for {{Out}} of {{Distribution Detection}}},
+  booktitle = {Proceedings of {{The}} 24th {{International Conference}} on {{Artificial Intelligence}} and {{Statistics}}},
+  author = {Morningstar, Warren and Ham, Cusuh and Gallagher, Andrew and Lakshminarayanan, Balaji and Alemi, Alex and Dillon, Joshua},
+  year = {2021},
+  month = mar,
+  pages = {3232--3240},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  urldate = {2022-10-13},
+  abstract = {Perhaps surprisingly, recent studies have shown probabilistic model likelihoods have poor specificity for out-of-distribution (OOD) detection and often assign higher likelihoods to OOD data than in-distribution data. To ameliorate this issue we propose DoSE, the density of states estimator. Drawing on the statistical physics notion of ``density of states,'' the DoSE decision rule avoids direct comparison of model probabilities, and instead utilizes the ``probability of the model probability,'' or indeed the frequency of any reasonable statistic. The frequency is calculated using nonparametric density estimators (e.g., KDE and one-class SVM) which measure the typicality of various model statistics given the training data and from which we can flag test points with low typicality as anomalous. Unlike many other methods, DoSE requires neither labeled data nor OOD examples. DoSE is modular and can be trivially applied to any existing, trained model. We demonstrate DoSE's state-of-the-art performance against other unsupervised OOD detectors on previously established ``hard'' benchmarks.},
+  langid = {english}
+}
+
+@misc{nalisnick2019_DeepGenerativeModels,
+  title = {Do {{Deep Generative Models Know What They Don}}'t {{Know}}?},
+  author = {Nalisnick, Eric and Matsukawa, Akihiro and Teh, Yee Whye and Gorur, Dilan and Lakshminarayanan, Balaji},
+  year = {2019},
+  month = feb,
+  number = {arXiv:1810.09136},
+  eprint = {1810.09136},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1810.09136},
+  urldate = {2022-08-30},
+  abstract = {A neural network deployed in the wild may be asked to make predictions for inputs that were drawn from a different distribution than that of the training data. A plethora of work has demonstrated that it is easy to find or synthesize inputs for which a neural network is highly confident yet wrong. Generative models are widely viewed to be robust to such mistaken confidence as modeling the density of the input features can be used to detect novel, out-of-distribution inputs. In this paper we challenge this assumption. We find that the density learned by flow-based models, VAEs, and PixelCNNs cannot distinguish images of common objects such as dogs, trucks, and horses (i.e. CIFAR-10) from those of house numbers (i.e. SVHN), assigning a higher likelihood to the latter when the model is trained on the former. Moreover, we find evidence of this phenomenon when pairing several popular image data sets: FashionMNIST vs MNIST, CelebA vs SVHN, ImageNet vs CIFAR-10 / CIFAR-100 / SVHN. To investigate this curious behavior, we focus analysis on flow-based generative models in particular since they are trained and evaluated via the exact marginal likelihood. We find such behavior persists even when we restrict the flows to constant-volume transformations. These transformations admit some theoretical analysis, and we show that the difference in likelihoods can be explained by the location and variances of the data and the model curvature. Our results caution against using the density estimates from deep generative models to identify inputs similar to the training distribution until their behavior for out-of-distribution inputs is better understood.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
+@misc{nalisnick2019_DetectingOutofDistributionInputs,
+  title = {Detecting {{Out-of-Distribution Inputs}} to {{Deep Generative Models Using Typicality}}},
+  author = {Nalisnick, Eric and Matsukawa, Akihiro and Teh, Yee Whye and Lakshminarayanan, Balaji},
+  year = {2019},
+  month = oct,
+  number = {arXiv:1906.02994},
+  eprint = {1906.02994},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1906.02994},
+  urldate = {2022-10-03},
+  abstract = {Recent work has shown that deep generative models can assign higher likelihood to out-of-distribution data sets than to their training data (Nalisnick et al., 2019; Choi et al., 2019). We posit that this phenomenon is caused by a mismatch between the model's typical set and its areas of high probability density. In-distribution inputs should reside in the former but not necessarily in the latter, as previous work has presumed. To determine whether or not inputs reside in the typical set, we propose a statistically principled, easy-to-implement test using the empirical distribution of model likelihoods. The test is model agnostic and widely applicable, only requiring that the likelihood can be computed or closely approximated. We report experiments showing that our procedure can successfully detect the out-of-distribution sets in several of the challenging cases reported by Nalisnick et al. (2019).},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @inproceedings{noe2020ICASSP2020-2020IEEEInt.Conf.Acoust.SpeechSignalProcess.ICASSP_CGCNNComplexGabor,
@@ -964,10 +1169,10 @@
   month = sep,
   journal = {arXiv:1609.03499 [cs]},
   eprint = {1609.03499},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-01-04},
   abstract = {This paper introduces WaveNet, a deep neural network for generating raw audio waveforms. The model is fully probabilistic and autoregressive, with the predictive distribution for each audio sample conditioned on all previous ones; nonetheless we show that it can be efficiently trained on data with tens of thousands of samples per second of audio. When applied to text-to-speech, it yields state-of-the-art performance, with human listeners rating it as significantly more natural sounding than the best parametric and concatenative systems for both English and Mandarin. A single WaveNet can capture the characteristics of many different speakers with equal fidelity, and can switch between them by conditioning on the speaker identity. When trained to model music, we find that it generates novel and often highly realistic musical fragments. We also show that it can be employed as a discriminative model, returning promising results for phoneme recognition.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Sound}
 }
 
@@ -979,10 +1184,10 @@
   month = sep,
   journal = {arXiv:1609.03499 [cs]},
   eprint = {1609.03499},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-02-03},
   abstract = {This paper introduces WaveNet, a deep neural network for generating raw audio waveforms. The model is fully probabilistic and autoregressive, with the predictive distribution for each audio sample conditioned on all previous ones; nonetheless we show that it can be efficiently trained on data with tens of thousands of samples per second of audio. When applied to text-to-speech, it yields state-of-the-art performance, with human listeners rating it as significantly more natural sounding than the best parametric and concatenative systems for both English and Mandarin. A single WaveNet can capture the characteristics of many different speakers with equal fidelity, and can switch between them by conditioning on the speaker identity. When trained to model music, we find that it generates novel and often highly realistic musical fragments. We also show that it can be employed as a discriminative model, returning promising results for phoneme recognition.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Sound}
 }
 
@@ -993,10 +1198,10 @@
   month = jun,
   journal = {arXiv:1206.6430 [cs, stat]},
   eprint = {1206.6430},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-04},
   abstract = {Mean-field variational inference is a method for approximate Bayesian posterior inference. It approximates a full posterior distribution with a factorized set of distributions by maximizing a lower bound on the marginal likelihood. This requires the ability to integrate a sum of terms in the log joint likelihood using this factorized distribution. Often not all integrals are in closed form, which is typically handled by using a lower bound. We present an alternative algorithm based on stochastic optimization that allows for direct optimization of the variational lower bound. This method uses control variates to reduce the variance of the stochastic search gradient, in which existing lower bounds can play an important role. We demonstrate the approach on two non-conjugate models: logistic regression and an approximation to the HDP.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Computation,Statistics - Machine Learning}
 }
 
@@ -1012,9 +1217,10 @@
   publisher = {{Nature Publishing Group}},
   issn = {1548-7105},
   doi = {10.1038/s41592-018-0109-9},
+  urldate = {2021-01-04},
   abstract = {Neuroscience is experiencing a revolution in which simultaneous recording of thousands of neurons is revealing population dynamics that are not apparent from single-neuron responses. This structure is typically extracted from data averaged across many trials, but deeper understanding requires studying phenomena detected in single trials, which is challenging due to incomplete sampling of the neural population, trial-to-trial variability, and fluctuations in action potential timing. We introduce latent factor analysis via dynamical systems, a deep learning method to infer latent dynamics from single-trial neural spiking data. When applied to a variety of macaque and human motor cortical datasets, latent factor analysis via dynamical systems accurately predicts observed behavioral variables, extracts precise firing rate estimates of neural dynamics on single trials, infers perturbations to those dynamics that correlate with behavioral choices, and combines data from non-overlapping recording sessions spanning months to improve inference of underlying dynamics.},
   copyright = {2018 The Author(s), under exclusive licence to Springer Nature America, Inc.},
-  language = {en}
+  langid = {english}
 }
 
 @article{plumerault2020ArXiv201211551Cs_AVAEAdversarialVariational,
@@ -1025,10 +1231,10 @@
   month = dec,
   journal = {arXiv:2012.11551 [cs]},
   eprint = {2012.11551},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-02-07},
   abstract = {Among the wide variety of image generative models, two models stand out: Variational Auto Encoders (VAE) and Generative Adversarial Networks (GAN). GANs can produce realistic images, but they suffer from mode collapse and do not provide simple ways to get the latent representation of an image. On the other hand, VAEs do not have these problems, but they often generate images less realistic than GANs. In this article, we explain that this lack of realism is partially due to a common underestimation of the natural image manifold dimensionality. To solve this issue we introduce a new framework that combines VAE and GAN in a novel and complementary way to produce an auto-encoding model that keeps VAEs properties while generating images of GAN-quality. We evaluate our approach both qualitatively and quantitatively on five image datasets.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition}
 }
 
@@ -1044,6 +1250,17 @@
   keywords = {band-pass filters,CNN,Computer architecture,convolutional neural nets,convolutional neural networks,Convolutional Neural Networks,Cutoff frequency,filter bank,filtering theory,filters,learning (artificial intelligence),neural network,raw samples,SincNet,speaker identification,speaker recognition,Speaker recognition,speaker verification,Spectrogram,speech processing,Speech recognition,Standards,Task analysis}
 }
 
+@inproceedings{ren2019Adv.NeuralInf.Process.Syst._LikelihoodRatiosOutofDistribution,
+  title = {Likelihood {{Ratios}} for {{Out-of-Distribution Detection}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Ren, Jie and Liu, Peter J. and Fertig, Emily and Snoek, Jasper and Poplin, Ryan and Depristo, Mark and Dillon, Joshua and Lakshminarayanan, Balaji},
+  year = {2019},
+  volume = {32},
+  publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-10-04},
+  abstract = {Discriminative neural networks offer little or no performance guarantees when deployed on data not generated by the same process as the training distribution. On such out-of-distribution (OOD) inputs, the prediction may not only be erroneous, but confidently so, limiting the safe deployment of classifiers in real-world applications. One such challenging application is bacteria identification based on genomic sequences, which holds the promise of early detection of diseases, but requires a model that can output low confidence predictions on OOD genomic sequences from new bacteria that were not present in the training data. We introduce a genomics dataset for OOD detection that allows other researchers to benchmark progress on this important problem. We investigate deep generative model based approaches for OOD detection and observe that the likelihood score is heavily affected by population level background statistics. We propose a likelihood ratio method for deep generative models which effectively corrects for these confounding background statistics. We benchmark the OOD detection performance of the proposed method against existing approaches on the genomics dataset and show that our method achieves state-of-the-art performance. Finally, we demonstrate the generality of the proposed method by showing that it significantly improves OOD detection when applied to deep generative models of images.}
+}
+
 @article{rezende2014ArXiv14014082CsStat_StochasticBackpropagationApproximate,
   title = {Stochastic {{Backpropagation}} and {{Approximate Inference}} in {{Deep Generative Models}}},
   author = {Rezende, Danilo Jimenez and Mohamed, Shakir and Wierstra, Daan},
@@ -1051,10 +1268,10 @@
   month = may,
   journal = {arXiv:1401.4082 [cs, stat]},
   eprint = {1401.4082},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-04},
   abstract = {We marry ideas from deep neural networks and approximate Bayesian inference to derive a generalised class of deep, directed generative models, endowed with a new algorithm for scalable inference and learning. Our algorithm introduces a recognition model to represent approximate posterior distributions, and that acts as a stochastic encoder of the data. We develop stochastic back-propagation -- rules for back-propagation through stochastic variables -- and use this to develop an algorithm that allows for joint optimisation of the parameters of both the generative and recognition model. We demonstrate on several real-world data sets that the model generates realistic samples, provides accurate imputations of missing data and is a useful tool for high-dimensional data visualisation.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Computation,Statistics - Machine Learning,Statistics - Methodology}
 }
 
@@ -1067,8 +1284,9 @@
   pages = {1530--1538},
   publisher = {{PMLR}},
   issn = {1938-7228},
+  urldate = {2022-02-08},
   abstract = {The choice of the approximate posterior distribution is one of the core problems in variational inference. Most applications of variational inference employ simple families of posterior approximations in order to allow for efficient inference, focusing on mean-field or other simple structured approximations. This restriction has a significant impact on the quality of inferences made using variational methods. We introduce a new approach for specifying flexible, arbitrarily complex and scalable approximate posterior distributions. Our approximations are distributions constructed through a normalizing flow, whereby a simple initial density is transformed into a more complex one by applying a sequence of invertible transformations until a desired level of complexity is attained. We use this view of normalizing flows to develop categories of finite and infinitesimal flows and provide a unified view of approaches for constructing rich posterior approximations. We demonstrate that the theoretical advantages of having posteriors that better match the true posterior, combined with the scalability of amortized variational approaches, provides a clear improvement in performance and applicability of variational inference.},
-  language = {en}
+  langid = {english}
 }
 
 @inproceedings{rolinek2019undefined_VariationalAutoencodersPursue,
@@ -1076,7 +1294,22 @@
   booktitle = {Proceedings of the {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}}},
   author = {Rolinek, Michal and Zietlow, Dominik and Martius, Georg},
   year = {2019},
-  pages = {12406--12415}
+  pages = {12406--12415},
+  urldate = {2022-05-23}
+}
+
+@inproceedings{ruff2018Proc.35thInt.Conf.Mach.Learn._DeepOneClassClassification,
+  title = {Deep {{One-Class Classification}}},
+  booktitle = {Proceedings of the 35th {{International Conference}} on {{Machine Learning}}},
+  author = {Ruff, Lukas and Vandermeulen, Robert and Goernitz, Nico and Deecke, Lucas and Siddiqui, Shoaib Ahmed and Binder, Alexander and M{\"u}ller, Emmanuel and Kloft, Marius},
+  year = {2018},
+  month = jul,
+  pages = {4393--4402},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  urldate = {2023-01-30},
+  abstract = {Despite the great advances made by deep learning in many machine learning problems, there is a relative dearth of deep learning approaches for anomaly detection. Those approaches which do exist involve networks trained to perform a task other than anomaly detection, namely generative models or compression, which are in turn adapted for use in anomaly detection; they are not trained on an anomaly detection based objective. In this paper we introduce a new anomaly detection method\textemdash Deep Support Vector Data Description\textemdash, which is trained on an anomaly detection based objective. The adaptation to the deep regime necessitates that our neural network and training procedure satisfy certain properties, which we demonstrate theoretically. We show the effectiveness of our method on MNIST and CIFAR-10 image benchmark datasets as well as on the detection of adversarial examples of GTSRB stop signs.},
+  langid = {english}
 }
 
 @inproceedings{rybkin2021Proc.38thInt.Conf.Mach.Learn._SimpleEffectiveVAE,
@@ -1088,8 +1321,9 @@
   pages = {9179--9189},
   publisher = {{PMLR}},
   issn = {2640-3498},
+  urldate = {2022-03-14},
   abstract = {Variational autoencoders (VAEs) provide an effective and simple method for modeling complex distributions. However, training VAEs often requires considerable hyperparameter tuning to determine the optimal amount of information retained by the latent variable. We study the impact of calibrated decoders, which learn the uncertainty of the decoding distribution and can determine this amount of information automatically, on the VAE performance. While many methods for learning calibrated decoders have been proposed, many of the recent papers that employ VAEs rely on heuristic hyperparameters and ad-hoc modifications instead. We perform the first comprehensive comparative analysis of calibrated decoder and provide recommendations for simple and effective VAE training. Our analysis covers a range of datasets and several single-image and sequential VAE models. We further propose a simple but novel modification to the commonly used Gaussian decoder, which computes the prediction variance analytically. We observe empirically that using heuristic modifications is not necessary with our method.},
-  language = {en}
+  langid = {english}
 }
 
 @article{sajjadi2018ArXiv180600035CsStat_AssessingGenerativeModels,
@@ -1099,10 +1333,10 @@
   month = oct,
   journal = {arXiv:1806.00035 [cs, stat]},
   eprint = {1806.00035},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2022-04-01},
   abstract = {Recent advances in generative modeling have led to an increased interest in the study of statistical divergences as means of model comparison. Commonly used evaluation methods, such as the Frechet Inception Distance (FID), correlate well with the perceived quality of samples and are sensitive to mode dropping. However, these metrics are unable to distinguish between different failure cases since they only yield one-dimensional scores. We propose a novel definition of precision and recall for distributions which disentangles the divergence into two separate dimensions. The proposed notion is intuitive, retains desirable properties, and naturally leads to an efficient algorithm that can be used to evaluate generative models. We relate this notion to total variation as well as to recent evaluation metrics such as Inception Score and FID. To demonstrate the practical utility of the proposed approach we perform an empirical study on several variants of Generative Adversarial Networks and Variational Autoencoders. In an extensive set of experiments we show that the proposed metric is able to disentangle the quality of generated samples from the coverage of the target distribution.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -1113,10 +1347,10 @@
   month = feb,
   journal = {arXiv:1312.6120 [cond-mat, q-bio, stat]},
   eprint = {1312.6120},
-  eprinttype = {arxiv},
   primaryclass = {cond-mat, q-bio, stat},
+  urldate = {2021-03-11},
   abstract = {Despite the widespread practical success of deep learning methods, our theoretical understanding of the dynamics of learning in deep neural networks remains quite sparse. We attempt to bridge the gap between the theory and practice of deep learning by systematically analyzing learning dynamics for the restricted case of deep linear neural networks. Despite the linearity of their input-output map, such networks have nonlinear gradient descent dynamics on weights that change with the addition of each new hidden layer. We show that deep linear networks exhibit nonlinear learning phenomena similar to those seen in simulations of nonlinear networks, including long plateaus followed by rapid transitions to lower error solutions, and faster convergence from greedy unsupervised pretraining initial conditions than from random initial conditions. We provide an analytical description of these phenomena by finding new exact solutions to the nonlinear dynamics of deep learning. Our theoretical analysis also reveals the surprising finding that as the depth of a network approaches infinity, learning speed can nevertheless remain finite: for a special class of initial conditions on the weights, very deep networks incur only a finite, depth independent, delay in learning speed relative to shallow networks. We show that, under certain conditions on the training data, unsupervised pretraining can find this special class of initial conditions, while scaled random Gaussian initializations cannot. We further exhibit a new class of random orthogonal initial conditions on weights that, like unsupervised pre-training, enjoys depth independent learning times. We further show that these initial conditions also lead to faithful propagation of gradients even in deep nonlinear networks, as long as they operate in a special regime known as the edge of chaos.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Condensed Matter - Disordered Systems and Neural Networks,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning}
 }
 
@@ -1127,10 +1361,10 @@
   month = feb,
   journal = {arXiv:1712.05884 [cs]},
   eprint = {1712.05884},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-03-10},
   abstract = {This paper describes Tacotron 2, a neural network architecture for speech synthesis directly from text. The system is composed of a recurrent sequence-to-sequence feature prediction network that maps character embeddings to mel-scale spectrograms, followed by a modified WaveNet model acting as a vocoder to synthesize timedomain waveforms from those spectrograms. Our model achieves a mean opinion score (MOS) of \$4.53\$ comparable to a MOS of \$4.58\$ for professionally recorded speech. To validate our design choices, we present ablation studies of key components of our system and evaluate the impact of using mel spectrograms as the input to WaveNet instead of linguistic, duration, and \$F\_0\$ features. We further demonstrate that using a compact acoustic intermediate representation enables significant simplification of the WaveNet architecture.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language}
 }
 
@@ -1143,8 +1377,9 @@
   pages = {5799--5808},
   publisher = {{PMLR}},
   issn = {2640-3498},
+  urldate = {2022-04-05},
   abstract = {In this article we revisit the definition of Precision-Recall (PR) curves for generative models proposed by (Sajjadi et al., 2018). Rather than providing a scalar for generative quality, PR curves distinguish mode-collapse (poor recall) and bad quality (poor precision). We first generalize their formulation to arbitrary measures hence removing any restriction to finite support. We also expose a bridge between PR curves and type I and type II error (a.k.a. false detection and rejection) rates of likelihood ratio classifiers on the task of discriminating between samples of the two distributions. Building upon this new perspective, we propose a novel algorithm to approximate precision-recall curves, that shares some interesting methodological properties with the hypothesis testing technique from (Lopez-Paz \& Oquab, 2017). We demonstrate the interest of the proposed formulation over the original approach on controlled multi-modal datasets.},
-  language = {en}
+  langid = {english}
 }
 
 @misc{smilkov2017undefined_SmoothGradRemovingNoise,
@@ -1155,26 +1390,41 @@
   month = jun,
   number = {arXiv:1706.03825},
   eprint = {1706.03825},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
   institution = {{arXiv}},
   doi = {10.48550/arXiv.1706.03825},
+  urldate = {2022-06-15},
   abstract = {Explaining the output of a deep network remains a challenge. In the case of an image classifier, one type of explanation is to identify pixels that strongly influence the final decision. A starting point for this strategy is the gradient of the class score function with respect to the input image. This gradient can be interpreted as a sensitivity map, and there are several techniques that elaborate on this basic idea. This paper makes two contributions: it introduces SmoothGrad, a simple method that can help visually sharpen gradient-based sensitivity maps, and it discusses lessons in the visualization of these maps. We publish the code for our experiments and a website with our results.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @article{snell2017ArXiv170305175CsStat_PrototypicalNetworksFewshot,
-  title = {Prototypical {{Networks}} for {{Few}}-Shot {{Learning}}},
+  title = {Prototypical {{Networks}} for {{Few-shot Learning}}},
   author = {Snell, Jake and Swersky, Kevin and Zemel, Richard S.},
   year = {2017},
   month = jun,
   journal = {arXiv:1703.05175 [cs, stat]},
   eprint = {1703.05175},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2022-04-19},
   abstract = {We propose prototypical networks for the problem of few-shot classification, where a classifier must generalize to new classes not seen in the training set, given only a small number of examples of each new class. Prototypical networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class. Compared to recent approaches for few-shot learning, they reflect a simpler inductive bias that is beneficial in this limited-data regime, and achieve excellent results. We provide an analysis showing that some simple design decisions can yield substantial improvements over recent approaches involving complicated architectural choices and meta-learning. We further extend prototypical networks to zero-shot learning and achieve state-of-the-art results on the CU-Birds dataset.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
+@misc{song2020_GenerativeModelingEstimating,
+  title = {Generative {{Modeling}} by {{Estimating Gradients}} of the {{Data Distribution}}},
+  author = {Song, Yang and Ermon, Stefano},
+  year = {2020},
+  month = oct,
+  number = {arXiv:1907.05600},
+  eprint = {1907.05600},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  urldate = {2022-10-04},
+  abstract = {We introduce a new generative model where samples are produced via Langevin dynamics using gradients of the data distribution estimated with score matching. Because gradients can be ill-defined and hard to estimate when the data resides on low-dimensional manifolds, we perturb the data with different levels of Gaussian noise, and jointly estimate the corresponding scores, i.e., the vector fields of gradients of the perturbed data distribution for all noise levels. For sampling, we propose an annealed Langevin dynamics where we use gradients corresponding to gradually decreasing noise levels as the sampling process gets closer to the data manifold. Our framework allows flexible model architectures, requires no sampling during training or the use of adversarial methods, and provides a learning objective that can be used for principled model comparisons. Our models produce samples comparable to GANs on MNIST, CelebA and CIFAR-10 datasets, achieving a new state-of-the-art inception score of 8.87 on CIFAR-10. Additionally, we demonstrate that our models learn effective representations via image inpainting experiments.},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -1184,7 +1434,8 @@
   author = {Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V},
   year = {2014},
   volume = {27},
-  publisher = {{Curran Associates, Inc.}}
+  publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-03-07}
 }
 
 @article{sutton1988MachLearn_LearningPredictMethods,
@@ -1198,8 +1449,9 @@
   pages = {9--44},
   issn = {1573-0565},
   doi = {10.1007/BF00115009},
+  urldate = {2020-09-29},
   abstract = {This article introduces a class of incremental learning procedures specialized for prediction-that is, for using past experience with an incompletely known system to predict its future behavior. Whereas conventional prediction-learning methods assign credit by means of the difference between predicted and actual outcomes, the new methods assign credit by means of the difference between temporally successive predictions. Although such temporal-difference methods have been used in Samuel's checker player, Holland's bucket brigade, and the author's Adaptive Heuristic Critic, they have remained poorly understood. Here we prove their convergence and optimality for special cases and relate them to supervised-learning methods. For most real-world prediction problems, temporal-difference methods require less memory and less peak computation than conventional methods and they produce more accurate predictions. We argue that most problems to which supervised learning is currently applied are really prediction problems of the sort to which temporal-difference methods can be applied to advantage.},
-  language = {en}
+  langid = {english}
 }
 
 @article{takahashi2019Proc.AAAIConf.Artif.Intell._VariationalAutoencoderImplicit,
@@ -1213,9 +1465,10 @@
   pages = {5066--5073},
   issn = {2374-3468},
   doi = {10.1609/aaai.v33i01.33015066},
+  urldate = {2022-05-23},
   abstract = {The variational autoencoder (VAE) is a powerful generative model that can estimate the probability of a data point by using latent variables. In the VAE, the posterior of the latent variable given the data point is regularized by the prior of the latent variable using Kullback Leibler (KL) divergence. Although the standard Gaussian distribution is usually used for the prior, this simple prior incurs over-regularization. As a sophisticated prior, the aggregated posterior has been introduced, which is the expectation of the posterior over the data distribution. This prior is optimal for the VAE in terms of maximizing the training objective function. However, KL divergence with the aggregated posterior cannot be calculated in a closed form, which prevents us from using this optimal prior. With the proposed method, we introduce the density ratio trick to estimate this KL divergence without modeling the aggregated posterior explicitly. Since the density ratio trick does not work well in high dimensions, we rewrite this KL divergence that contains the high-dimensional density ratio into the sum of the analytically calculable term and the lowdimensional density ratio term, to which the density ratio trick is applied. Experiments on various datasets show that the VAE with this implicit optimal prior achieves high density estimation performance.},
   copyright = {Copyright (c) 2019 Association for the Advancement of Artificial Intelligence},
-  language = {en}
+  langid = {english}
 }
 
 @inproceedings{teshima2020Adv.NeuralInf.Process.Syst._CouplingbasedInvertibleNeural,
@@ -1226,7 +1479,24 @@
   volume = {33},
   pages = {3362--3373},
   publisher = {{Curran Associates, Inc.}},
+  urldate = {2022-06-09},
   abstract = {Invertible neural networks based on coupling flows (CF-INNs) have various machine learning applications such as image synthesis and representation learning. However, their desirable characteristics such as analytic invertibility come at the cost of restricting the functional forms. This poses a question on their representation power: are CF-INNs universal approximators for invertible functions? Without a universality, there could be a well-behaved invertible transformation that the CF-INN can never approximate, hence it would render the model class unreliable. We answer this question by showing a convenient criterion: a CF-INN is universal if its layers contain affine coupling and invertible linear functions as special cases. As its corollary, we can affirmatively resolve a previously unsolved problem: whether normalizing flow models based on affine coupling can be universal distributional approximators. In the course of proving the universality, we prove a general theorem to show the equivalence of the universality for certain diffeomorphism classes, a theoretical insight that is of interest by itself.}
+}
+
+@misc{theis2016_NoteEvaluationGenerative,
+  title = {A Note on the Evaluation of Generative Models},
+  author = {Theis, Lucas and van den Oord, A{\"a}ron and Bethge, Matthias},
+  year = {2016},
+  month = apr,
+  number = {arXiv:1511.01844},
+  eprint = {1511.01844},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1511.01844},
+  urldate = {2022-08-30},
+  abstract = {Probabilistic generative models can be used for compression, denoising, inpainting, texture synthesis, semi-supervised learning, unsupervised feature learning, and other tasks. Given this wide range of applications, it is not surprising that a lot of heterogeneity exists in the way these models are formulated, trained, and evaluated. As a consequence, direct comparison between models is often difficult. This article reviews mostly known but often underappreciated properties relating to the evaluation and interpretation of generative models with a focus on image models. In particular, we show that three of the currently most commonly used criteria---average log-likelihood, Parzen window estimates, and visual fidelity of samples---are largely independent of each other when the data is high-dimensional. Good performance with respect to one criterion therefore need not imply good performance with respect to the other criteria. Our results show that extrapolation from one criterion to another is not warranted and generative models need to be evaluated directly with respect to the application(s) they were intended for. In addition, we provide examples demonstrating that Parzen window estimates should generally be avoided.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @article{tipping1999J.R.Stat.Soc.Ser.BStat.Methodol._ProbabilisticPrincipalComponent,
@@ -1239,11 +1509,11 @@
   pages = {611--622},
   issn = {1467-9868},
   doi = {10.1111/1467-9868.00196},
+  urldate = {2020-11-12},
   abstract = {Principal component analysis (PCA) is a ubiquitous technique for data analysis and processing, but one which is not based on a probability model. We demonstrate how the principal axes of a set of observed data vectors may be determined through maximum likelihood estimation of parameters in a latent variable model that is closely related to factor analysis. We consider the properties of the associated likelihood function, giving an EM algorithm for estimating the principal subspace iteratively, and discuss, with illustrative examples, the advantages conveyed by this probabilistic approach to PCA.},
   copyright = {1999 Royal Statistical Society},
-  language = {en},
-  keywords = {Density estimation,EM algorithm,Gaussian mixtures,Maximum likelihood,Principal component analysis,Probability model},
-  annotation = {\_eprint: https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9868.00196}
+  langid = {english},
+  keywords = {Density estimation,EM algorithm,Gaussian mixtures,Maximum likelihood,Principal component analysis,Probability model}
 }
 
 @article{tomczak2018ArXiv170507120CsStat_VAEVampPrior,
@@ -1253,10 +1523,10 @@
   month = feb,
   journal = {arXiv:1705.07120 [cs, stat]},
   eprint = {1705.07120},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-01-08},
   abstract = {Many different methods to train deep generative models have been introduced in the past. In this paper, we propose to extend the variational auto-encoder (VAE) framework with a new type of prior which we call "Variational Mixture of Posteriors" prior, or VampPrior for short. The VampPrior consists of a mixture distribution (e.g., a mixture of Gaussians) with components given by variational posteriors conditioned on learnable pseudo-inputs. We further extend this prior to a two layer hierarchical model and show that this architecture with a coupled prior and posterior, learns significantly better models. The model also avoids the usual local optima issues related to useless latent dimensions that plague VAEs. We provide empirical studies on six datasets, namely, static and binary MNIST, OMNIGLOT, Caltech 101 Silhouettes, Frey Faces and Histopathology patches, and show that applying the hierarchical VampPrior delivers state-of-the-art results on all datasets in the unsupervised permutation invariant setting and the best results or comparable to SOTA methods for the approach with convolutional networks.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -1267,40 +1537,40 @@
   month = dec,
   journal = {arXiv:1706.03762 [cs]},
   eprint = {1706.03762},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-02-22},
   abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning}
 }
 
 @article{wang2017ArXiv170310135Cs_TacotronEndtoEndSpeech,
-  title = {Tacotron: {{Towards End}}-to-{{End Speech Synthesis}}},
+  title = {Tacotron: {{Towards End-to-End Speech Synthesis}}},
   shorttitle = {Tacotron},
   author = {Wang, Yuxuan and {Skerry-Ryan}, R. J. and Stanton, Daisy and Wu, Yonghui and Weiss, Ron J. and Jaitly, Navdeep and Yang, Zongheng and Xiao, Ying and Chen, Zhifeng and Bengio, Samy and Le, Quoc and Agiomyrgiannakis, Yannis and Clark, Rob and Saurous, Rif A.},
   year = {2017},
   month = apr,
   journal = {arXiv:1703.10135 [cs]},
   eprint = {1703.10135},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2022-02-03},
   abstract = {A text-to-speech synthesis system typically consists of multiple stages, such as a text analysis frontend, an acoustic model and an audio synthesis module. Building these components often requires extensive domain expertise and may contain brittle design choices. In this paper, we present Tacotron, an end-to-end generative text-to-speech model that synthesizes speech directly from characters. Given {$<$}text, audio{$>$} pairs, the model can be trained completely from scratch with random initialization. We present several key techniques to make the sequence-to-sequence framework perform well for this challenging task. Tacotron achieves a 3.82 subjective 5-scale mean opinion score on US English, outperforming a production parametric system in terms of naturalness. In addition, since Tacotron generates speech at the frame level, it's substantially faster than sample-level autoregressive methods.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Sound}
 }
 
 @article{weiss2021ArXiv201103568CsEess_WaveTacotronSpectrogramfreeEndtoend,
-  title = {Wave-{{Tacotron}}: {{Spectrogram}}-Free End-to-End Text-to-Speech Synthesis},
+  title = {Wave-{{Tacotron}}: {{Spectrogram-free}} End-to-End Text-to-Speech Synthesis},
   shorttitle = {Wave-{{Tacotron}}},
   author = {Weiss, Ron J. and {Skerry-Ryan}, R. J. and Battenberg, Eric and Mariooryad, Soroosh and Kingma, Diederik P.},
   year = {2021},
   month = feb,
   journal = {arXiv:2011.03568 [cs, eess]},
   eprint = {2011.03568},
-  eprinttype = {arxiv},
   primaryclass = {cs, eess},
+  urldate = {2022-02-03},
   abstract = {We describe a sequence-to-sequence neural network which directly generates speech waveforms from text inputs. The architecture extends the Tacotron model by incorporating a normalizing flow into the autoregressive decoder loop. Output waveforms are modeled as a sequence of non-overlapping fixed-length blocks, each one containing hundreds of samples. The interdependencies of waveform samples within each block are modeled using the normalizing flow, enabling parallel training and synthesis. Longer-term dependencies are handled autoregressively by conditioning each flow on preceding blocks.This model can be optimized directly with maximum likelihood, with-out using intermediate, hand-designed features nor additional loss terms. Contemporary state-of-the-art text-to-speech (TTS) systems use a cascade of separately learned models: one (such as Tacotron) which generates intermediate features (such as spectrograms) from text, followed by a vocoder (such as WaveRNN) which generates waveform samples from the intermediate features. The proposed system, in contrast, does not use a fixed intermediate representation, and learns all parameters end-to-end. Experiments show that the proposed model generates speech with quality approaching a state-of-the-art neural TTS system, with significantly improved generation speed.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing}
 }
 
@@ -1319,10 +1589,10 @@
   month = apr,
   journal = {arXiv:1812.06864 [cs]},
   eprint = {1812.06864},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-03-12},
   abstract = {Current state-of-the-art speech recognition systems build on recurrent neural networks for acoustic and/or language modeling, and rely on feature extraction pipelines to extract mel-filterbanks or cepstral coefficients. In this paper we present an alternative approach based solely on convolutional neural networks, leveraging recent advances in acoustic models from the raw waveform and language modeling. This fully convolutional approach is trained end-to-end to predict characters from the raw waveform, removing the feature extraction step altogether. An external convolutional language model is used to decode words. On Wall Street Journal, our model matches the current state-of-the-art. On Librispeech, we report state-of-the-art performance among end-to-end models, including Deep Speech 2 trained with 12 times more acoustic data and significantly more linguistic data.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computation and Language}
 }
 
@@ -1334,10 +1604,10 @@
   month = jan,
   journal = {arXiv:2101.08596 [cs, eess]},
   eprint = {2101.08596},
-  eprinttype = {arxiv},
   primaryclass = {cs, eess},
+  urldate = {2021-03-10},
   abstract = {Mel-filterbanks are fixed, engineered audio features which emulate human perception and have been used through the history of audio understanding up to today. However, their undeniable qualities are counterbalanced by the fundamental limitations of handmade representations. In this work we show that we can train a single learnable frontend that outperforms mel-filterbanks on a wide range of audio signals, including speech, music, audio events and animal sounds, providing a general-purpose learned frontend for audio classification. To do so, we introduce a new principled, lightweight, fully learnable architecture that can be used as a drop-in replacement of mel-filterbanks. Our system learns all operations of audio features extraction, from filtering to pooling, compression and normalization, and can be integrated into any neural network at a negligible parameter cost. We perform multi-task training on eight diverse audio classification tasks, and show consistent improvements of our model over mel-filterbanks and previous learnable alternatives. Moreover, our system outperforms the current state-of-the-art learnable frontend on Audioset, with orders of magnitude fewer parameters.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing}
 }
 
@@ -1348,10 +1618,10 @@
   month = jan,
   journal = {arXiv:2006.03680 [cs, stat]},
   eprint = {2006.03680},
-  eprinttype = {arxiv},
   primaryclass = {cs, stat},
+  urldate = {2021-03-15},
   abstract = {Learning disentangled representations is regarded as a fundamental task for improving the generalization, robustness, and interpretability of generative models. However, measuring disentanglement has been challenging and inconsistent, often dependent on an ad-hoc external model or specific to a certain dataset. To address this, we present a method for quantifying disentanglement that only uses the generative model, by measuring the topological similarity of conditional submanifolds in the learned representation. This method showcases both unsupervised and supervised variants. To illustrate the effectiveness and applicability of our method, we empirically evaluate several state-of-the-art models across multiple datasets. We find that our method ranks models similarly to existing methods. We make ourcode publicly available at https://github.com/stanfordmlgroup/disentanglement.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -1362,11 +1632,9 @@
   month = feb,
   journal = {arXiv:2102.08850 [cs]},
   eprint = {2102.08850},
-  eprinttype = {arxiv},
   primaryclass = {cs},
+  urldate = {2021-03-16},
   abstract = {Contrastive learning has recently seen tremendous success in self-supervised learning. So far, however, it is largely unclear why the learned representations generalize so effectively to a large variety of downstream tasks. We here prove that feedforward models trained with objectives belonging to the commonly used InfoNCE family learn to implicitly invert the underlying generative model of the observed data. While the proofs make certain statistical assumptions about the generative model, we observe empirically that our findings hold even if these assumptions are severely violated. Our theory highlights a fundamental connection between contrastive learning, generative modeling, and nonlinear independent component analysis, thereby furthering our understanding of the learned representations as well as providing a theoretical foundation to derive more effective contrastive losses.},
-  archiveprefix = {arXiv},
+  archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
 }
-
-
